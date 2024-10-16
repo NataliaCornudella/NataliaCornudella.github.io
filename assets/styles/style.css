@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'SwizzyMedium';
+    src: url('../fonts/Swizzy-Trial-Medium.woff2') format('woff2'),
+         url('../fonts/Swizzy-Trial-Medium.woff') format('woff'),
+         url('../fonts/Swizzy-Trial-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SwizzyRegular';
+    src: url('../fonts/Swizzy-Trial-Regular.woff2') format('woff2'),
+         url('../fonts/Swizzy-Trial-Regular.woff') format('woff'),
+         url('../fonts/Swizzy-Trial-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'SwizzyRegular', sans-serif; /* Note: removed duplicate font-family */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: scroll; /* Allow vertical scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    padding: 10px;
+    mix-blend-mode: difference;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    position: relative;
+    z-index: 1001;
+}
+
+p, .project-info, #slide-counter {
+    font-family: 'SwizzyRegular', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+h1 {
+    font-family: 'SwizzyMedium', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+a {
+    font-family: 'SwizzyMedium', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: 'SwizzyRegular', sans-serif;
+    font-size: 12px;
+}
+
+#main-nav {
+    display: flex;
+    gap: 72px;
+    align-items: top;
+}
+
+.logo {
+    position: relative;
+    color: white;
+}
+
+.nav-links {
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+#dark-mode-toggle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    isolation: isolate;
+    mix-blend-mode: normal;
+    background-color: white;
+}
+main, #project-info-nav {
+    transition: transform 0.3s ease-out;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#fullscreen-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#slider-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-nav-left, .slider-nav-right {
+    flex: 1;
+    cursor: pointer;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#project-info-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease-in-out; /* Match this to main's transition */
+    overflow: scroll;
+}
+
+#project-info-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+.project-info-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 20px;
+    padding: 10px;
+    width: max-content; /* Allow container to grow as needed */
+}
+
+.project-info {
+    flex: 0 0 auto;
+    opacity: 0.3;
+    color: white;
+    transition: opacity 0.3s ease, transform 0.1s ease;
+    white-space: normal;  /* Allow text to wrap */
+    text-align: left;     /* Align text to the left */
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.project-info.active {
+    opacity: 1;
+    color: white;
+}
+
+.project-info:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.project-info.active:hover {
+    opacity: 1;
+    transform: none;
+}
+
+.project-info-container:hover .project-info.active {
+    opacity: 0.3; /* Adjust this value as needed */
+    
+}
+
+/* Ensure text doesn't wrap in the spans within project-details */
+.project-details span {
+    display: inline-block;
+}
+
+#info-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#info-popup.visible {
+    transform: translateY(0);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .nav-links a {
+    color: white;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: white;
+    isolation: isolate;
+    mix-blend-mode: normal;
+}
+
+.logo a {
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.text-element {
+    transform: translateZ(0);
+}
+
+/* Target the last child of the main content area */
+main > *:last-child {
+    margin-bottom: 0;
+}
+
+#information-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 90vh; /* Limit to 90% of viewport height */
+    background-color: white; /* Or any color you prefer */
+    transform: translateY(100%); /* Start off-screen */
+    transition: transform 0.3s ease-out;
+    overflow-y: auto;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#information-container.visible {
+    transform: translateY(0); /* Slide up to visible position */
+}
+
+#information-section {
+    padding: 20px;
+    margin-top: auto;
+}
+
+body.dark-mode #credits a {
+    color: white;
+}
+
+body.dark-mode #credits-mobile a {
+    color: white;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+    p, .project-info, #slide-counter {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 10px;
+    }
+    
+
+    #dark-mode-toggle {
+        display: none;
+    }
+
+    #main-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body {
+    overflow-y: scroll; /* Allow vertical scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Ensure the page takes up at least the full viewport height */
+html, body {
+    min-height: 100vh;
+}
+
+img.lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img.lazy[src] {
+    opacity: 1;
+}

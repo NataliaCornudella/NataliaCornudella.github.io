@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Cornudella - Project</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/project.css">
+    <link rel="stylesheet" href="assets/styles/information.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="main-nav">
+                <div class="logo"><a href="index.html">Natalia Cornudella</a></div>
+                <div class="nav-links">
+                    <a href="projects.html">Index</a>
+                    <a href="#" id="info-button">Information</a>
+                </div>
+            </div>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode"></button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="slide-counter">
+            <span id="slide-counter-text"></span>
+        </div>
+        <div id="project-slider">
+            <!-- Slides will be dynamically inserted here -->
+        </div>
+        <div id="slider-nav">
+            <div class="slider-nav-left"></div>
+            <div class="slider-nav-right"></div>
+        </div>
+    </main>
+
+    <div id="project-info-nav">
+        <!-- Project info items will be dynamically inserted here -->
+    </div>
+
+    <div id="related-projects" class="hidden">
+        <!-- Related projects will be dynamically inserted here -->
+    </div>
+
+    <footer id="information-container" class="hidden">
+        <div id="information-section" class="hidden">
+            <!-- Content from components/information.html will be inserted here -->
+        </div>
+    </footer>
+
+    <script src="components/project.js"></script>
+    <script src="components/main.js"></script>
+    <script src="components/information.js"></script>
+</body>
+</html>

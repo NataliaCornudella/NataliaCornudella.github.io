@@ -1,0 +1,153 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Bikoko",
+      "year": "2024",
+      "client": "7AM",
+      "mainImage": "assets/images/BG-01.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/BG-01.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-05.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/BG-08.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-09.webp"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mediterráneamente w/ Bad Gyal",
+      "year": "2024",
+      "client": "ESTRELLA DAMM",
+      "mainImage": "assets/images/AS-01.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/AS-01.webp"]
+        },{
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/AS-04.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "El Salseo Campaign",
+      "year": "2023",
+      "client": "EL SALSEO",
+      "mainImage": "assets/images/TK-01.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/TK-01.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/TK-02.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/TK-05.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "SS23 Metamorfosis",
+      "year": "2023",
+      "client": "FENERS",
+      "mainImage": "assets/images/FN-01.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/FN-01.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/FN-02.webp", "assets/images/FN-03.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/FN-04.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/FN-05.webp"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "AW22 Nude Scouts",
+      "year": "2022",
+      "client": "NUDE PROJECT",
+      "mainImage": "assets/images/R1-05885-012A-copy.jpg",
+      "images": [
+        "assets/images/Tokischa.jpg",
+        "assets/images/Tokischa.jpg",
+        "assets/images/Tokischa.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Chrysalis w/Katrina Vankova",
+      "year": "2022",
+      "client": "PERSONAL",
+      "mainImage": "assets/images/291758114_1649407935423505_8681245465157740767_n.jpg",
+      "images": [
+        "assets/images/Bad-Gyal-1.jpg",
+        "assets/images/Bad-Gyal-1.jpg",
+        "assets/images/Bad-Gyal-1.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Neo2 w/Taichu",
+      "year": "2021",
+      "client": "NEO2 MAGAZINE",
+      "mainImage": "assets/images/368005011_1236072010421404_436798226057364498_n.jpg",
+      "images": [
+        "assets/images/Bad-Gyal-1.jpg",
+        "assets/images/Bad-Gyal-1.jpg",
+        "assets/images/Bad-Gyal-1.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Cornudella - Project Index</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/grid.css">
+    <link rel="stylesheet" href="assets/styles/information.css">
+</head>
+<body class="projects-page">
+    <header>
+        <nav>
+            <div id="main-nav">
+                <div class="logo"><a href="index.html">Natalia Cornudella</a></div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="#" id="info-button">Information</a>
+                </div>
+            </div>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode"></button>
+        </nav>
+    </header>
+
+    <div class="grid-variant-selector">
+        <button class="variant-button active" data-variant="1">1</button>
+        <button class="variant-button" data-variant="2">2</button>
+        <button class="variant-button" data-variant="3">3</button>
+        <button class="variant-button-mobile" data-variant="1">1</button>
+    </div>
+
+    <main class="projects-main">
+        <div id="project-grid" class="variant-1">
+            <!-- Project items will be dynamically inserted here -->
+        </div>
+        
+        <div id="information-section">
+            <!-- Content from components/information.html will be inserted here -->
+        </div>
+    </main>
+
+    <script src="components/projects.js"></script>
+    <script src="components/main.js"></script>
+    <script src="components/information.js"></script>
+</body>
+</html>
