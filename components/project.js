@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     let project;
     let allProjects;
-    let preloadedImages = {}; // Add this line to store preloaded images
+    let preloadedImages = {};
 
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('id');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }));
         }
         
-        preloadProjectImages(project); // Add this line to preload images
+        preloadProjectImages(project);
         updateProjectInfoNav(project, allProjects);
         updateSlider();
         updateSlideCounter();
@@ -59,10 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.createElement('div');
         container.className = 'project-info-container';
 
-        // Find the index of the current project
         const currentIndex = allProjects.findIndex(p => p.id === currentProject.id);
-
-        // Create a circular array of projects starting from the current project
         const orderedProjects = [
             ...allProjects.slice(currentIndex),
             ...allProjects.slice(0, currentIndex)
@@ -76,13 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
         projectInfoNav.innerHTML = '';
         projectInfoNav.appendChild(container);
 
-        // Add click event listeners
         const projectInfos = projectInfoNav.querySelectorAll('.project-info');
         projectInfos.forEach(info => {
             info.addEventListener('click', handleProjectInfoClick);
         });
 
-        // Restore the gradient
         projectInfoNav.classList.add('project-info-nav-gradient');
     }
 
@@ -127,6 +122,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
         }
         projectSlider.innerHTML = slideHTML;
+        preloadAdjacentSlides();
+    }
+
+    function preloadAdjacentSlides() {
+        const indicesToPreload = [
+            currentSlide + 1,
+            currentSlide - 1
+        ];
+
+        indicesToPreload.forEach(index => {
+            if (index >= 0 && index < project.slides.length && !preloadedImages[index]) {
+                const slide = project.slides[index];
+                preloadedImages[index] = [];
+                slide.images.forEach((imageSrc, imageIndex) => {
+                    const img = new Image();
+                    img.src = imageSrc;
+                    preloadedImages[index][imageIndex] = img;
+                });
+            }
+        });
     }
 
     function createSingleSlideHTML(slide) {

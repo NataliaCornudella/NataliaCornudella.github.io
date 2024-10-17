@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentSlide = 0;
     let projects = [];
+    let preloadedImages = {}; // Add this line to store preloaded images
 
     console.log('Fetching projects...');
     fetch('data/projects.json')
@@ -14,19 +15,26 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             console.log('Projects fetched:', data.projects);
             projects = data.projects;
+            preloadSliderImages(); // Add this line to preload images
             initializeSlider();
-            preloadSliderImages(); // Add this line
         })
         .catch(error => console.error('Error loading project data:', error));
+
+    function preloadSliderImages() {
+        projects.forEach((project, index) => {
+            const img = new Image();
+            img.src = project.mainImage;
+            preloadedImages[index] = img;
+        });
+    }
 
     function initializeSlider() {
         console.log('Initializing slider');
         updateSlider();
-        createProjectInfoWheel(); // This creates and appends the container
+        createProjectInfoWheel();
         updateProjectInfoNav();
         addProjectInfoListeners();
 
-        // Add event listener to container scroll after the container is created
         const container = projectInfoNav.querySelector('.project-info-container');
         if (container) {
             container.addEventListener('scroll', () => {
@@ -49,16 +57,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (projects.length > 0) {
             const project = projects[currentSlide];
             slider.innerHTML = `
-                <img src="${project.mainImage}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain;">
+                <img src="${preloadedImages[currentSlide].src}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain;">
             `;
-            
-            // Preload next image
-            if (currentSlide < projects.length - 1) {
-                const nextProject = projects[currentSlide + 1];
-                const preloadImage = new Image();
-                preloadImage.src = nextProject.mainImage;
-            }
+            preloadAdjacentImages();
         }
+    }
+
+    function preloadAdjacentImages() {
+        const nextIndex = (currentSlide + 1) % projects.length;
+        const prevIndex = (currentSlide - 1 + projects.length) % projects.length;
+        [nextIndex, prevIndex].forEach(index => {
+            if (!preloadedImages[index]) {
+                const img = new Image();
+                img.src = projects[index].mainImage;
+                preloadedImages[index] = img;
+            }
+        });
     }
 
     function createProjectInfoWheel() {
@@ -166,10 +180,3 @@ document.addEventListener('DOMContentLoaded', () => {
     sliderNavLeft.addEventListener('click', () => moveSlider(-1));
     sliderNavRight.addEventListener('click', () => moveSlider(1));
 });
-
-function preloadSliderImages() {
-    projects.forEach(project => {
-        const img = new Image();
-        img.src = project.mainImage;
-    });
-}
