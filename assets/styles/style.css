@@ -367,3 +367,15 @@ img.lazy {
 img.lazy[src] {
     opacity: 1;
 }
+
+:root {
+    --text-color: #000000;
+    --information-bg-color: #ffffff;
+    /* ... other light mode variables ... */
+}
+
+body.dark-mode {
+    --text-color: #ffffff;
+    --information-bg-color: #000000;
+    /* ... other dark mode variables ... */
+}
