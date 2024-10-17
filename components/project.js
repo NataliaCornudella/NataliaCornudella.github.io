@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     let project;
     let allProjects;
+    let preloadedImages = {}; // Add this line to store preloaded images
 
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('id');
@@ -37,9 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }));
         }
         
+        preloadProjectImages(project); // Add this line to preload images
         updateProjectInfoNav(project, allProjects);
         updateSlider();
         updateSlideCounter();
+    }
+
+    function preloadProjectImages(project) {
+        project.slides.forEach((slide, index) => {
+            preloadedImages[index] = [];
+            slide.images.forEach((imageSrc, imageIndex) => {
+                const img = new Image();
+                img.src = imageSrc;
+                preloadedImages[index][imageIndex] = img;
+            });
+        });
     }
 
     function updateProjectInfoNav(currentProject, allProjects) {
@@ -106,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'single-contain':
             case 'single-cover':
             case 'single-contain-with-margin':
-                // These layouts remain unchanged for mobile
                 slideHTML = createSingleSlideHTML(slide);
                 break;
             case 'double-split-right-cover':
@@ -115,25 +127,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
         }
         projectSlider.innerHTML = slideHTML;
-        lazyLoadImages();
     }
 
     function createSingleSlideHTML(slide) {
+        const img = preloadedImages[currentSlide][0];
         if (slide.layout === 'single-contain-with-margin') {
-            return `<div class="contain-with-margin"><img data-src="${slide.images[0]}" alt="" class="lazy"></div>`;
+            return `<div class="contain-with-margin"><img src="${img.src}" alt="" class="${slide.layout}"></div>`;
         }
-        return `<img data-src="${slide.images[0]}" alt="" class="${slide.layout} lazy">`;
+        return `<img src="${img.src}" alt="" class="${slide.layout}">`;
     }
 
     function createDesktopSplitSlideHTML(slide) {
         const isLeftCover = slide.layout === 'double-split-left-cover';
+        const [img1, img2] = preloadedImages[currentSlide];
         return `
             <div class="split-slide">
                 <div class="split-left">
-                    <img src="${slide.images[0]}" alt="" class="${isLeftCover ? 'cover-image' : 'contained-image'}">
+                    <img src="${img1.src}" alt="" class="${isLeftCover ? 'cover-image' : 'contained-image'}">
                 </div>
                 <div class="split-right">
-                    <img src="${slide.images[1]}" alt="" class="${isLeftCover ? 'contained-image' : 'cover-image'}">
+                    <img src="${img2.src}" alt="" class="${isLeftCover ? 'contained-image' : 'cover-image'}">
                 </div>
             </div>
         `;
@@ -141,13 +154,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createMobileSplitSlideHTML(slide) {
         const isBottomCover = slide.layout === 'double-split-left-cover';
+        const [img1, img2] = preloadedImages[currentSlide];
         return `
             <div class="split-slide-mobile ${isBottomCover ? 'bottom-cover' : 'top-cover'}">
                 <div class="split-top">
-                    <img src="${slide.images[isBottomCover ? 1 : 0]}" alt="" class="${isBottomCover ? 'contained-image' : 'cover-image'}">
+                    <img src="${isBottomCover ? img2.src : img1.src}" alt="" class="${isBottomCover ? 'contained-image' : 'cover-image'}">
                 </div>
                 <div class="split-bottom">
-                    <img src="${slide.images[isBottomCover ? 0 : 1]}" alt="" class="${isBottomCover ? 'cover-image' : 'contained-image'}">
+                    <img src="${isBottomCover ? img1.src : img2.src}" alt="" class="${isBottomCover ? 'cover-image' : 'contained-image'}">
                 </div>
             </div>
         `;
@@ -239,26 +253,4 @@ document.addEventListener('DOMContentLoaded', () => {
     projectInfoContainer.addEventListener('mouseleave', () => {
         projectInfoContainer.style.overflowX = 'hidden';
     });
-
-    function lazyLoadImages() {
-        const images = document.querySelectorAll('img.lazy');
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.classList.remove('lazy');
-                    imageObserver.unobserve(img);
-                }
-            });
-        }, options);
-
-        images.forEach(img => imageObserver.observe(img));
-    }
 });

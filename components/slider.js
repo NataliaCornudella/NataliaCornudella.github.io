@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Projects fetched:', data.projects);
             projects = data.projects;
             initializeSlider();
+            preloadSliderImages(); // Add this line
         })
         .catch(error => console.error('Error loading project data:', error));
 
@@ -50,6 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
             slider.innerHTML = `
                 <img src="${project.mainImage}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain;">
             `;
+            
+            // Preload next image
+            if (currentSlide < projects.length - 1) {
+                const nextProject = projects[currentSlide + 1];
+                const preloadImage = new Image();
+                preloadImage.src = nextProject.mainImage;
+            }
         }
     }
 
@@ -158,3 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
     sliderNavLeft.addEventListener('click', () => moveSlider(-1));
     sliderNavRight.addEventListener('click', () => moveSlider(1));
 });
+
+function preloadSliderImages() {
+    projects.forEach(project => {
+        const img = new Image();
+        img.src = project.mainImage;
+    });
+}
