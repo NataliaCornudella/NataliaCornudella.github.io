@@ -52,7 +52,7 @@ body {
 }
 
 .project-item:hover {
-    transform: translateY(-1px);
+    transform: translateY(-1.5px);
 }
 
 .project-item-wrapper {

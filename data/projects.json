@@ -118,11 +118,30 @@
       "title": "AW22 Nude Scouts",
       "year": "2022",
       "client": "NUDE PROJECT",
-      "mainImage": "assets/images/R1-05885-012A-copy.jpg",
-      "images": [
-        "assets/images/Tokischa.jpg",
-        "assets/images/Tokischa.jpg",
-        "assets/images/Tokischa.jpg"
+      "mainImage": "assets/images/403891540_1013847729911170_7707826546546402324_n.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/BG-01.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-05.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/BG-08.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-09.webp"]
+        }
       ]
     },
     {
@@ -130,11 +149,27 @@
       "title": "Chrysalis w/Katrina Vankova",
       "year": "2022",
       "client": "PERSONAL",
-      "mainImage": "assets/images/291758114_1649407935423505_8681245465157740767_n.jpg",
-      "images": [
-        "assets/images/Bad-Gyal-1.jpg",
-        "assets/images/Bad-Gyal-1.jpg",
-        "assets/images/Bad-Gyal-1.jpg"
+      "mainImage": "assets/images/291367445_711051963302878_6835614854944234521_n.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/AS-01.webp"]
+        },{
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/AS-04.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+        }
       ]
     },
     {
@@ -142,11 +177,229 @@
       "title": "Neo2 w/Taichu",
       "year": "2021",
       "client": "NEO2 MAGAZINE",
-      "mainImage": "assets/images/368005011_1236072010421404_436798226057364498_n.jpg",
-      "images": [
-        "assets/images/Bad-Gyal-1.jpg",
-        "assets/images/Bad-Gyal-1.jpg",
-        "assets/images/Bad-Gyal-1.jpg"
+      "mainImage": "assets/images/445613935_1138329280707342_5877617697544024569_n.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/TK-01.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/TK-02.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/TK-05.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Bikoko",
+      "year": "2024",
+      "client": "7AM",
+      "mainImage": "assets/images/394730081_684979736923417_920027212473841679_n.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/BG-01.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-05.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/BG-08.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-09.webp"]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Mediterraneamente w/ Bad Gyal",
+      "year": "2024",
+      "client": "ESTRELLA DAMM",
+      "mainImage": "assets/images/311292340_1244046699723593_7988058881332624126_n.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/AS-01.webp"]
+        },{
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/AS-04.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "El Salseo Campaign",
+      "year": "2023",
+      "client": "EL SALSEO",
+      "mainImage": "assets/images/293852978_1027365494474673_7295500375833252469_n.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/TK-01.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/TK-02.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/TK-05.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "SS23 Metamorfosis",
+      "year": "2023",
+      "client": "FENERS",
+      "mainImage": "assets/images/311078844_471624415020551_2559673423213413193_n.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/FN-01.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/FN-02.webp", "assets/images/FN-03.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/FN-04.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/FN-05.webp"]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "AW22 Nude Scouts",
+      "year": "2022",
+      "client": "NUDE PROJECT",
+      "mainImage": "assets/images/338468401_1651136301978637_8918205896333181901_n.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/BG-01.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-05.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/BG-08.webp"]
+        },{
+          "layout": "single-cover",
+          "images": ["assets/images/BG-09.webp"]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Chrysalis w/Katrina Vankova",
+      "year": "2022",
+      "client": "PERSONAL",
+      "mainImage": "assets/images/274950356_341914737877821_3443335969881030910_n.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/AS-01.webp"]
+        },{
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/AS-04.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Neo2 w/Taichu",
+      "year": "2021",
+      "client": "NEO2 MAGAZINE",
+      "mainImage": "assets/images/368005011_1236072010421404_436798226057364498_n.webp",
+      "slides": [
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/TK-01.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/TK-02.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/TK-05.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+        }
       ]
     }
   ]
