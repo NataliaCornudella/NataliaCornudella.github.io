@@ -2,403 +2,528 @@
   "projects": [
     {
       "id": 1,
-      "title": "Bikoko",
+      "title": "Time Out w/ Meritxell de Soto",
       "year": "2024",
-      "client": "7AM",
-      "mainImage": "assets/images/BG-01.webp",
+      "client": "TIME OUT",
+      "mainImage": "assets/images/Meritxell de Soto x Time Out/2.webp",
       "slides": [
         {
           "layout": "single-contain",
-          "images": ["assets/images/BG-01.webp"]
-        },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-05.webp"]
+          "images": ["assets/images/Meritxell de Soto x Time Out/2.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
+          "images": ["assets/images/Meritxell de Soto x Time Out/4.webp", "assets/images/Meritxell de Soto x Time Out/3.webp"]
         },
         {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
+          "layout": "single-contain",
+          "images": ["assets/images/Meritxell de Soto x Time Out/7.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/BG-08.webp"]
-        },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-09.webp"]
+          "images": ["assets/images/Meritxell de Soto x Time Out/8.webp"]
         }
       ]
     },
     {
       "id": 2,
-      "title": "Mediterraneamente w/ Bad Gyal",
+      "title": "Carlotta VDM",
       "year": "2024",
-      "client": "ESTRELLA DAMM",
-      "mainImage": "assets/images/AS-01.webp",
+      "client": "PERSONAL",
+      "mainImage": "assets/images/Carlotta VDM Test/000005490024.webp",
       "slides": [
         {
-          "layout": "single-cover",
-          "images": ["assets/images/AS-01.webp"]
+          "layout": "single-contain",
+          "images": ["assets/images/Carlotta VDM Test/000005490024.webp"]
         },{
           "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+          "images": ["assets/images/Carlotta VDM Test/000005490017.webp", "assets/images/Carlotta VDM Test/000005490029 1.webp"]
         },
         {
-          "layout": "single-contain",
-          "images": ["assets/images/AS-04.webp"]
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Carlotta VDM Test/8.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
+          "images": ["assets/images/Carlotta VDM Test/1.webp", "assets/images/Carlotta VDM Test/3.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Carlotta VDM Test/4.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+          "images": ["assets/images/Carlotta VDM Test/8.webp", "assets/images/Carlotta VDM Test/000005490001.webp"]
         }
       ]
     },
     {
       "id": 3,
-      "title": "El Salseo Campaign",
+      "title": "Perdió este culo",
       "year": "2023",
-      "client": "EL SALSEO",
-      "mainImage": "assets/images/TK-01.webp",
+      "client": "BAD GYAL",
+      "mainImage": "assets/images/Bad Gyal_Perdió este culo/41.webp",
       "slides": [
         {
           "layout": "single-cover",
-          "images": ["assets/images/TK-01.webp"]
+          "images": ["assets/images/Bad Gyal_Perdió este culo/41.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/TK-02.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
+          "images": ["assets/images/Bad Gyal_Perdió este culo/Print analogico.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/TK-05.webp"]
+          "images": ["assets/images/Bad Gyal_Perdió este culo/bg5.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Bad Gyal_Perdió este culo/martiño 2.webp", "assets/images/Bad Gyal_Perdió este culo/bg 6.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_Perdió este culo/martiño 2.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+          "images": ["assets/images/Bad Gyal_Perdió este culo/bg 4.webp", "assets/images/Bad Gyal_Perdió este culo/bg1.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_Perdió este culo/bg3.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_Perdió este culo/39.webp"]
         }
       ]
     },
     {
       "id": 4,
-      "title": "SS23 Metamorfosis",
+      "title": "Julieta",
       "year": "2023",
-      "client": "FENERS",
-      "mainImage": "assets/images/FN-01.webp",
+      "client": "JULIETA",
+      "mainImage": "assets/images/Julieta/1.webp",
       "slides": [
         {
           "layout": "single-contain",
-          "images": ["assets/images/FN-01.webp"]
+          "images": ["assets/images/Julieta/1.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/FN-02.webp", "assets/images/FN-03.webp"]
+          "images": ["assets/images/Julieta/2.webp", "assets/images/Julieta/4.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/FN-04.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/FN-05.webp"]
+          "images": ["assets/images/Julieta/3.webp"]
         }
       ]
     },
     {
       "id": 5,
-      "title": "AW22 Nude Scouts",
+      "title": "Bikoko",
       "year": "2022",
-      "client": "NUDE PROJECT",
-      "mainImage": "assets/images/403891540_1013847729911170_7707826546546402324_n.webp",
+      "client": "7AM",
+      "mainImage": "assets/images/Bikoko x 7AM/6.webp",
       "slides": [
         {
           "layout": "single-contain",
-          "images": ["assets/images/BG-01.webp"]
+          "images": ["assets/images/Bikoko x 7AM/6.webp"]
         },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-05.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bikoko x 7AM/2.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
+          "images": ["assets/images/Bikoko x 7AM/3.webp", "assets/images/Bikoko x 7AM/5.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/BG-08.webp"]
-        },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-09.webp"]
+          "images": ["assets/images/Bikoko x 7AM/1.webp"]
         }
       ]
     },
     {
       "id": 6,
-      "title": "Chrysalis w/Katrina Vankova",
-      "year": "2022",
-      "client": "PERSONAL",
-      "mainImage": "assets/images/291367445_711051963302878_6835614854944234521_n.webp",
+      "title": "PKM w/ Bad Gyal",
+      "year": "2023",
+      "client": "ESTRELLA DAMM",
+      "mainImage": "assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm-vertical CAT.webp",
       "slides": [
         {
-          "layout": "single-cover",
-          "images": ["assets/images/AS-01.webp"]
-        },{
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm-vertical CAT.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/OV_ED_PKM_OPI_Cast_RGB.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/AS-04.webp"]
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm Horizontal final-cat.webp"]
         },
         {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/OV_ED_PKM_PosterHoriz_Cast_RGB.webp"]
         }
       ]
     },
     {
       "id": 7,
-      "title": "Neo2 w/Taichu",
-      "year": "2021",
-      "client": "NEO2 MAGAZINE",
-      "mainImage": "assets/images/445613935_1138329280707342_5877617697544024569_n.webp",
+      "title": "Nude Scouts",
+      "year": "2022",
+      "client": "NUDE PROJECT",
+      "mainImage": "assets/images/Nude Scouts x Nude Project/14.webp",
       "slides": [
         {
-          "layout": "single-cover",
-          "images": ["assets/images/TK-01.webp"]
-        },
-        {
           "layout": "single-contain",
-          "images": ["assets/images/TK-02.webp"]
+          "images": ["assets/images/Nude Scouts x Nude Project/14.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
+          "images": ["assets/images/Nude Scouts x Nude Project/10.webp", "assets/images/Nude Scouts x Nude Project/9.webp"]
         },
         {
+          "layout": "single-contain",
+          "images": ["assets/images/Nude Scouts x Nude Project/2.webp"]
+        },
+        
+        {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/TK-05.webp"]
+          "images": ["assets/images/Nude Scouts x Nude Project/15.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+          "images": ["assets/images/Nude Scouts x Nude Project/3.webp", "assets/images/Nude Scouts x Nude Project/4.webp"]
         }
       ]
     },
     {
       "id": 8,
-      "title": "Bikoko",
-      "year": "2024",
-      "client": "7AM",
-      "mainImage": "assets/images/394730081_684979736923417_920027212473841679_n.webp",
+      "title": "Pussy",
+      "year": "2022",
+      "client": "BAD GYAL",
+      "mainImage": "assets/images/Bad Gyal_Pussy/03-11.webp",
       "slides": [
         {
           "layout": "single-contain",
-          "images": ["assets/images/BG-01.webp"]
-        },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-05.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
+          "images": ["assets/images/Bad Gyal_Pussy/03-11.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/BG-08.webp"]
+          "images": ["assets/images/Bad Gyal_Pussy/pussy definitiva.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Bad Gyal_Pussy/02-11.webp", "assets/images/Bad Gyal_Pussy/02-4.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_Pussy/02-1.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_Pussy/7.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Bad Gyal_Pussy/4.webp", "assets/images/Bad Gyal_Pussy/6.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Bad Gyal_Pussy/8.webp", "assets/images/Bad Gyal_Pussy/11.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_Pussy/13.webp"]
         },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-09.webp"]
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_Pussy/12.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_Pussy/01-15.webp"]
         }
       ]
     },
     {
       "id": 9,
-      "title": "Mediterraneamente w/ Bad Gyal",
-      "year": "2024",
-      "client": "ESTRELLA DAMM",
-      "mainImage": "assets/images/311292340_1244046699723593_7988058881332624126_n.webp",
+      "title": "Rose Gold Iphone",
+      "year": "2022",
+      "client": "VEIN MAGAZINE",
+      "mainImage": "assets/images/Rose Gold Iphone_Editorial/04-24.webp",
       "slides": [
         {
-          "layout": "single-cover",
-          "images": ["assets/images/AS-01.webp"]
-        },{
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Rose Gold Iphone_Editorial/04-24.webp", "assets/images/Rose Gold Iphone_Editorial/04-22.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Rose Gold Iphone_Editorial/04-31.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/AS-04.webp"]
+          "images": ["assets/images/Rose Gold Iphone_Editorial/01-36.webp"]
         },
         {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Rose Gold Iphone_Editorial/01-30.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+          "images": ["assets/images/Rose Gold Iphone_Editorial/01-3 copia.webp", "assets/images/Rose Gold Iphone_Editorial/01-15.webp"]
         }
       ]
     },
     {
       "id": 10,
-      "title": "El Salseo Campaign",
-      "year": "2023",
-      "client": "EL SALSEO",
-      "mainImage": "assets/images/293852978_1027365494474673_7295500375833252469_n.webp",
+      "title": "Fanático",
+      "year": "2022",
+      "client": "NETFLIX",
+      "mainImage": "assets/images/Fanático x Netflix/Lucloren 1.webp",
       "slides": [
         {
-          "layout": "single-cover",
-          "images": ["assets/images/TK-01.webp"]
-        },
-        {
           "layout": "single-contain",
-          "images": ["assets/images/TK-02.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/TK-05.webp"]
+          "images": ["assets/images/Fanático x Netflix/Lucloren 1.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+          "images": ["assets/images/Fanático x Netflix/1 Amaia.webp", "assets/images/Fanático x Netflix/Amaia 4.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Fanático x Netflix/Sita Bellan 1.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Fanático x Netflix/La Zowi 3.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Fanático x Netflix/07-11.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Fanático x Netflix/Samantha - Alex.webp", "assets/images/Fanático x Netflix/Samantha Hudson 1.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Fanático x Netflix/Lalbany 1.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Fanático x Netflix/06-8.webp", "assets/images/Fanático x Netflix/06-15.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Fanático x Netflix/Nicole Wallace 1.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Fanático x Netflix/2-31.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Fanático x Netflix/Chino 1.webp", "assets/images/Fanático x Netflix/LunaKi 1.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Fanático x Netflix/Leiti 1.webp"]
         }
       ]
     },
     {
       "id": 11,
-      "title": "SS23 Metamorfosis",
+      "title": "Enamórate",
       "year": "2023",
-      "client": "FENERS",
-      "mainImage": "assets/images/311078844_471624415020551_2559673423213413193_n.webp",
+      "client": "BAD GYAL x NICKI NICOLE",
+      "mainImage": "assets/images/Bad Gyal Nicki Nicole_Enamórate/R1-06370-018A.webp",
       "slides": [
         {
-          "layout": "single-contain",
-          "images": ["assets/images/FN-01.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/FN-02.webp", "assets/images/FN-03.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/FN-04.webp"]
+          "layout": "single-cover",
+          "images": ["assets/images/Bad Gyal Nicki Nicole_Enamórate/R1-06370-018A.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/FN-05.webp"]
+          "images": ["assets/images/Bad Gyal Nicki Nicole_Enamórate/PORTADA_Enamorate_Nicki Nicole, Bad Gyal.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Bad Gyal Nicki Nicole_Enamórate/R1-06371-0014.webp", "assets/images/Bad Gyal Nicki Nicole_Enamórate/R1-06371-0016.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal Nicki Nicole_Enamórate/R2-06369-024A.webp"]
+        },
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/Bad Gyal Nicki Nicole_Enamórate/R1-06370-009A.webp"]
         }
       ]
     },
     {
       "id": 12,
-      "title": "AW22 Nude Scouts",
+      "title": "Sexy",
       "year": "2022",
-      "client": "NUDE PROJECT",
-      "mainImage": "assets/images/338468401_1651136301978637_8918205896333181901_n.webp",
+      "client": "BAD GYAL",
+      "mainImage": "assets/images/Bad Gyal_Sexy/2. final.webp",
       "slides": [
         {
           "layout": "single-contain",
-          "images": ["assets/images/BG-01.webp"]
+          "images": ["assets/images/Bad Gyal_Sexy/2. final.webp"]
         },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-05.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/BG-04.webp", "assets/images/BG-02.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/BG-06.webp", "assets/images/BG-07.webp"]
-        },
-        {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/BG-08.webp"]
-        },{
-          "layout": "single-cover",
-          "images": ["assets/images/BG-09.webp"]
+          "images": ["assets/images/Bad Gyal_Sexy/3 final.webp"]
         }
       ]
     },
     {
       "id": 13,
-      "title": "Chrysalis w/Katrina Vankova",
-      "year": "2022",
-      "client": "PERSONAL",
-      "mainImage": "assets/images/274950356_341914737877821_3443335969881030910_n.webp",
+      "title": "Chulo pt.2",
+      "year": "2023",
+      "client": "BAD GYAL",
+      "mainImage": "assets/images/Bad Gyal_Chulo pt.2/DSCF7479.webp",
       "slides": [
         {
           "layout": "single-cover",
-          "images": ["assets/images/AS-01.webp"]
-        },{
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7479-16-9.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7465.webp"]
+        },
+        {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-02.webp", "assets/images/AS-03.webp"]
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7484.webp", "assets/images/Bad Gyal_Chulo pt.2/DSCF7481.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/AS-04.webp"]
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7491.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/AS-05.webp", "assets/images/AS-06.webp"]
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/R1-05885-014A copy.webp", "assets/images/Bad Gyal_Chulo pt.2/R1-05885-012A copy.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/AS-07.webp", "assets/images/AS-08.webp"]
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/R1-05885-003A copy.webp", "assets/images/Bad Gyal_Chulo pt.2/R1-05886-036A copy.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/R1-05887-0021.webp"]
         }
       ]
     },
     {
       "id": 14,
-      "title": "Neo2 w/Taichu",
-      "year": "2021",
-      "client": "NEO2 MAGAZINE",
-      "mainImage": "assets/images/368005011_1236072010421404_436798226057364498_n.webp",
+      "title": "Suzete",
+      "year": "2023",
+      "client": "PERSONAL",
+      "mainImage": "assets/images/Suzete/Suzete promo16572 2 còpia 2.webp",
       "slides": [
         {
-          "layout": "single-cover",
-          "images": ["assets/images/TK-01.webp"]
-        },
-        {
           "layout": "single-contain",
-          "images": ["assets/images/TK-02.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/TK-03.webp", "assets/images/TK-04.webp"]
+          "images": ["assets/images/Suzete/Suzete promo16572 2 còpia 2.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/TK-05.webp"]
+          "images": ["assets/images/Suzete/Suzete promo16634 còpia 2.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Suzete/Suzete promo16675 còpia.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Suzete/Suzete promo16747 còpia.webp"]
+        }
+        
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Metamorfosis",
+      "year": "2021",
+      "client": "FENERS",
+      "mainImage": "assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy 2.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Metamorfosis x Feners/1.webp", "assets/images/Metamorfosis x Feners/2.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Metamorfosis x Feners/3.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/TK-06.webp", "assets/images/TK-07.webp"]
+          "images": ["assets/images/Metamorfosis x Feners/ivan-gromov-pAOxb3DxhG0-unsplash 3.webp", "assets/images/Metamorfosis x Feners/ivan-gromov-pAOxb3DxhG0-unsplash 2.webp"]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "44",
+      "year": "2021",
+      "client": "BAD GYAL",
+      "mainImage": "assets/images/Bad Gyal_44/3.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_44/3.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_44/6.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Bad Gyal_44/20.webp", "assets/images/Bad Gyal_44/22.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Bad Gyal_44/10.webp", "assets/images/Bad Gyal_44/11.webp"]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Real G",
+      "year": "2021",
+      "client": "BAD GYAL x QUEVEDO",
+      "mainImage": "assets/images/Bad Gyal_Real G/12.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_Real G/12.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_Real G/ 4.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_Real G/9.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Bad Gyal_Real G/5.webp", "assets/images/Bad Gyal_Real G/13 còpia.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_Real G/13.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Bad Gyal_Real G/REAL G @natalia.cornudella 4.webp", "assets/images/Bad Gyal_Real G/REAL G @natalia.cornudella 3.webp"]
         }
       ]
     }
