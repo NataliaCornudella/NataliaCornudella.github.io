@@ -140,5 +140,11 @@ main {
         bottom: 0;
     }
 
+    #information-section #instagram-link,
+    #information-section #email-link,
+    #information-section #phone-link {
+        font-size: 10px;
+    }
+
 
 }
