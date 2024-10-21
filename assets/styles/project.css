@@ -4,7 +4,8 @@
     left: 0;
     width: 100%;
     height: 100%; /* Ensure it covers the full viewport */
-    z-index: -1; /* Bring it to the front */
+    z-index: 1; /* Bring it to the front */
+    cursor: pointer;
 }
 
 #project-slider img {
@@ -122,6 +123,8 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2;
+    display: none;
     background-color: var(--related-projects-bg);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;

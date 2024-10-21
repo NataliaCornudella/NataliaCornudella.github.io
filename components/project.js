@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectSlider = document.getElementById('project-slider');
-    const sliderNavLeft = document.querySelector('.slider-nav-left');
-    const sliderNavRight = document.querySelector('.slider-nav-right');
     const slideCounter = document.getElementById('slide-counter');
     const slideCounterText = document.getElementById('slide-counter-text');
     const relatedProjects = document.getElementById('related-projects');
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlider();
         updateSlideCounter();
 
-        addSwipeListeners(); // Initialize swipe detection
+        addSwipeListeners();
     }
 
     function preloadProjectImages(project) {
@@ -110,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateSlider() {
         const slide = project.slides[currentSlide];
         let slideHTML = '';
-        const isMobile = window.innerWidth <= 768; // Define mobile breakpoint
+        const isMobile = window.innerWidth <= 768;
 
         switch (slide.layout) {
             case 'single-contain':
@@ -201,6 +199,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         relatedProjects.classList.remove('hidden');
+        projectSlider.style.zIndex = '1';
+        relatedProjects.style.zIndex = '2';
     }
 
     function createProjectItem(project) {
@@ -230,21 +230,75 @@ document.addEventListener('DOMContentLoaded', () => {
         return filteredProjects.sort(() => 0.5 - Math.random()).slice(0, count);
     }
 
-    sliderNavLeft.addEventListener('click', () => {
-        if (currentSlide > 0) {
-            currentSlide--;
-            updateSlider();
-            updateSlideCounter();
+    function addSwipeListeners() {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        projectSlider.addEventListener('touchstart', handleTouchStart, false);
+        projectSlider.addEventListener('touchend', handleTouchEnd, false);
+
+        function handleTouchStart(event) {
+            touchStartX = event.changedTouches[0].screenX;
         }
+
+        function handleTouchEnd(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleGesture();
+        }
+
+        function handleGesture() {
+            const swipeThreshold = 50;
+
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe left (next slide)
+                if (currentSlide < project.slides.length - 1) {
+                    currentSlide++;
+                    updateSlider();
+                    updateSlideCounter();
+                } else {
+                    showRelatedProjects();
+                }
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe right (previous slide)
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateSlider();
+                    updateSlideCounter();
+                }
+            }
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        updateSlider();
     });
 
-    sliderNavRight.addEventListener('click', () => {
-        if (currentSlide < project.slides.length - 1) {
-            currentSlide++;
-            updateSlider();
-            updateSlideCounter();
-        } else {
-            showRelatedProjects();
+    // Add click event listener for slider navigation
+    projectSlider.addEventListener('click', (event) => {
+        // Check if the click is directly on the slider or on an image
+        if (event.target === projectSlider || event.target.tagName === 'IMG') {
+            const sliderRect = projectSlider.getBoundingClientRect();
+            const clickX = event.clientX - sliderRect.left;
+            const sliderWidth = sliderRect.width;
+
+            if (clickX < sliderWidth / 2) {
+                // Click on left side
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateSlider();
+                    updateSlideCounter();
+                }
+            } else {
+                // Click on right side
+                if (currentSlide < project.slides.length - 1) {
+                    currentSlide++;
+                    updateSlider();
+                    updateSlideCounter();
+                } else {
+                    showRelatedProjects();
+                }
+            }
         }
     });
 
@@ -279,48 +333,4 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.warn('Project info container not found');
     }
-
-    function addSwipeListeners() {
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        projectSlider.addEventListener('touchstart', handleTouchStart, false);
-        projectSlider.addEventListener('touchend', handleTouchEnd, false);
-
-        function handleTouchStart(event) {
-            touchStartX = event.changedTouches[0].screenX;
-        }
-
-        function handleTouchEnd(event) {
-            touchEndX = event.changedTouches[0].screenX;
-            handleGesture();
-        }
-
-        function handleGesture() {
-            const swipeThreshold = 50; // Minimum required distance for a swipe
-
-            if (touchEndX < touchStartX - swipeThreshold) {
-                // Swipe left (next slide)
-                if (currentSlide < project.slides.length - 1) {
-                    currentSlide++;
-                    updateSlider();
-                    updateSlideCounter();
-                } else {
-                    showRelatedProjects();
-                }
-            }
-            if (touchEndX > touchStartX + swipeThreshold) {
-                // Swipe right (previous slide)
-                if (currentSlide > 0) {
-                    currentSlide--;
-                    updateSlider();
-                    updateSlideCounter();
-                }
-            }
-        }
-    }
-
-    window.addEventListener('resize', () => {
-        updateSlider();
-    });
 });

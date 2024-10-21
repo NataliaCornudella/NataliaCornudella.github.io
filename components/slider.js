@@ -2,12 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM Content Loaded');
     const slider = document.getElementById('fullscreen-slider');
     const projectInfoNav = document.getElementById('project-info-nav');
-    const sliderNavLeft = document.querySelector('.slider-nav-left');
-    const sliderNavRight = document.querySelector('.slider-nav-right');
 
     let currentSlide = 0;
     let projects = [];
-    let preloadedImages = {}; // Add this line to store preloaded images
+    let preloadedImages = {};
 
     console.log('Fetching projects...');
     fetch('data/projects.json')
@@ -15,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             console.log('Projects fetched:', data.projects);
             projects = data.projects;
-            preloadSliderImages(); // Add this line to preload images
+            preloadSliderImages();
             initializeSlider();
         })
         .catch(error => console.error('Error loading project data:', error));
@@ -35,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateProjectInfoNav();
         addProjectInfoListeners();
 
-        addSwipeListeners(); // Initialize swipe detection
+        addSwipeListeners();
 
         const container = projectInfoNav.querySelector('.project-info-container');
         if (container) {
@@ -82,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.createElement('div');
         container.className = 'project-info-container';
 
-        // Duplicate the projects to allow infinite scrolling
         const duplicateProjects = [...projects, ...projects];
         duplicateProjects.forEach((project, index) => {
             container.appendChild(createProjectInfoElement(project, index % projects.length));
@@ -146,26 +143,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateProjectInfoNav() {
         const container = projectInfoNav.querySelector('.project-info-container');
         const projectInfos = container.querySelectorAll('.project-info');
-        const gap = 20; // The gap between elements in pixels
+        const gap = 20;
 
-        // Calculate the total width of a single set of projects
         let singleSetWidth = 0;
         for (let i = 0; i < projects.length; i++) {
             singleSetWidth += projectInfos[i].offsetWidth + gap;
         }
 
-        // Update active class
         projectInfos.forEach((info, index) => {
             info.classList.toggle('active', index % projects.length === currentSlide);
         });
 
-        // Calculate translateX for infinite scrolling
         let translateX = 0;
         for (let i = 0; i < currentSlide; i++) {
             translateX += projectInfos[i].offsetWidth + gap;
         }
 
-        // Adjust translateX to create the looping effect
         if (translateX >= singleSetWidth) {
             translateX -= singleSetWidth;
         }
@@ -178,9 +171,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlider();
         updateProjectInfoNav();
     }
-
-    sliderNavLeft.addEventListener('click', () => moveSlider(-1));
-    sliderNavRight.addEventListener('click', () => moveSlider(1));
 
     function addSwipeListeners() {
         let touchStartX = 0;
@@ -199,16 +189,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function handleGesture() {
-            const swipeThreshold = 50; // Minimum required distance for a swipe
+            const swipeThreshold = 50;
 
             if (touchEndX < touchStartX - swipeThreshold) {
-                // Swipe left (next slide)
                 moveSlider(1);
             }
             if (touchEndX > touchStartX + swipeThreshold) {
-                // Swipe right (previous slide)
                 moveSlider(-1);
             }
         }
     }
+
+    // Add click event listener for slider navigation
+    slider.addEventListener('click', (event) => {
+        const sliderRect = slider.getBoundingClientRect();
+        const clickX = event.clientX - sliderRect.left;
+        const sliderWidth = sliderRect.width;
+
+        if (clickX < sliderWidth / 2) {
+            moveSlider(-1);
+        } else {
+            moveSlider(1);
+        }
+    });
 });
