@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlider();
         updateSlideCounter();
 
-        addSwipeListeners(); // Add this line to initialize swipe events
+        addSwipeListeners(); // Initialize swipe detection
     }
 
     function preloadProjectImages(project) {
@@ -263,13 +263,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const projectInfoContainer = document.querySelector('.project-info-container.static');
     
-    projectInfoContainer.addEventListener('mouseenter', () => {
-        projectInfoContainer.style.overflowX = 'auto';
-    });
+    if (projectInfoContainer) {
+        projectInfoContainer.addEventListener('mouseenter', () => {
+            projectInfoContainer.style.overflowX = 'auto';
+        });
 
-    projectInfoContainer.addEventListener('mouseleave', () => {
-        projectInfoContainer.style.overflowX = 'hidden';
-    });
+        projectInfoContainer.addEventListener('mouseleave', () => {
+            projectInfoContainer.style.overflowX = 'hidden';
+        });
+    } else {
+        console.warn('Project info container not found');
+    }
 
     function addSwipeListeners() {
         let touchStartX = 0;

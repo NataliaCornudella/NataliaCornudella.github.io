@@ -343,5 +343,9 @@ body.dark-mode {
         z-index: 1; /* Bring it to the front */
     }
 
+    #related-projects {
+        z-index: 2;
+    }
+
 }
 

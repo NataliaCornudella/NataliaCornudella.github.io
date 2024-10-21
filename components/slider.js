@@ -54,36 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function addSwipeListeners() {
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        slider.addEventListener('touchstart', handleTouchStart, false);
-        slider.addEventListener('touchend', handleTouchEnd, false);
-
-        function handleTouchStart(event) {
-            touchStartX = event.changedTouches[0].screenX;
-        }
-
-        function handleTouchEnd(event) {
-            touchEndX = event.changedTouches[0].screenX;
-            handleGesture();
-        }
-
-        function handleGesture() {
-            const swipeThreshold = 50; // Minimum required distance for a swipe
-
-            if (touchEndX < touchStartX - swipeThreshold) {
-                // Swipe left (next slide)
-                moveSlider(1);
-            }
-            if (touchEndX > touchStartX + swipeThreshold) {
-                // Swipe right (previous slide)
-                moveSlider(-1);
-            }
-        }
-    }
-
     function updateSlider() {
         console.log('Updating slider, current slide:', currentSlide);
         if (projects.length > 0) {
@@ -211,4 +181,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sliderNavLeft.addEventListener('click', () => moveSlider(-1));
     sliderNavRight.addEventListener('click', () => moveSlider(1));
+
+    function addSwipeListeners() {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        slider.addEventListener('touchstart', handleTouchStart, false);
+        slider.addEventListener('touchend', handleTouchEnd, false);
+
+        function handleTouchStart(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleGesture();
+        }
+
+        function handleGesture() {
+            const swipeThreshold = 50; // Minimum required distance for a swipe
+
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe left (next slide)
+                moveSlider(1);
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe right (previous slide)
+                moveSlider(-1);
+            }
+        }
+    }
 });
