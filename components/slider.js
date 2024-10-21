@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         createProjectInfoWheel();
         updateProjectInfoNav();
         addProjectInfoListeners();
+        addSwipeNavigation(); // Add this line
 
         const container = projectInfoNav.querySelector('.project-info-container');
         if (container) {
@@ -177,6 +178,45 @@ document.addEventListener('DOMContentLoaded', () => {
         updateProjectInfoNav();
     }
 
+    function addSwipeNavigation() {
+        handleSwipe(slider, 
+            () => moveSlider(1),  // Swipe left to go forward
+            () => moveSlider(-1)  // Swipe right to go backward
+        );
+    }
+
     sliderNavLeft.addEventListener('click', () => moveSlider(-1));
     sliderNavRight.addEventListener('click', () => moveSlider(1));
+
+    function handleSwipe(element, onSwipeLeft, onSwipeRight) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        element.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+        
+        element.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipeGesture();
+        }, false);
+        
+        function handleSwipeGesture() {
+            if (touchStartX - touchEndX > 50) {
+                onSwipeLeft();
+            } else if (touchEndX - touchStartX > 50) {
+                onSwipeRight();
+            }
+        }
+    }
+
+    slider.addEventListener('click', (e) => {
+        const clickX = e.clientX;
+        const sliderWidth = slider.offsetWidth;
+        if (clickX > sliderWidth / 2) {
+            moveSlider(1);
+        } else {
+            moveSlider(-1);
+        }
+    });
 });
