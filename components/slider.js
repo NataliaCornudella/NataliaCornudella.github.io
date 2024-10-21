@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
         createProjectInfoWheel();
         updateProjectInfoNav();
         addProjectInfoListeners();
-        addSwipeNavigation(); // Add this line
+
+        addSwipeListeners(); // Initialize swipe detection
 
         const container = projectInfoNav.querySelector('.project-info-container');
         if (container) {
@@ -50,6 +51,36 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         } else {
             console.error('Container not found when trying to add scroll event listener.');
+        }
+    }
+
+    function addSwipeListeners() {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        slider.addEventListener('touchstart', handleTouchStart, false);
+        slider.addEventListener('touchend', handleTouchEnd, false);
+
+        function handleTouchStart(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleGesture();
+        }
+
+        function handleGesture() {
+            const swipeThreshold = 50; // Minimum required distance for a swipe
+
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe left (next slide)
+                moveSlider(1);
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe right (previous slide)
+                moveSlider(-1);
+            }
         }
     }
 
@@ -178,45 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateProjectInfoNav();
     }
 
-    function addSwipeNavigation() {
-        handleSwipe(slider, 
-            () => moveSlider(1),  // Swipe left to go forward
-            () => moveSlider(-1)  // Swipe right to go backward
-        );
-    }
-
     sliderNavLeft.addEventListener('click', () => moveSlider(-1));
     sliderNavRight.addEventListener('click', () => moveSlider(1));
-
-    function handleSwipe(element, onSwipeLeft, onSwipeRight) {
-        let touchStartX = 0;
-        let touchEndX = 0;
-        
-        element.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, false);
-        
-        element.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipeGesture();
-        }, false);
-        
-        function handleSwipeGesture() {
-            if (touchStartX - touchEndX > 50) {
-                onSwipeLeft();
-            } else if (touchEndX - touchStartX > 50) {
-                onSwipeRight();
-            }
-        }
-    }
-
-    slider.addEventListener('click', (e) => {
-        const clickX = e.clientX;
-        const sliderWidth = slider.offsetWidth;
-        if (clickX > sliderWidth / 2) {
-            moveSlider(1);
-        } else {
-            moveSlider(-1);
-        }
-    });
 });

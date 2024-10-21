@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateProjectInfoNav(project, allProjects);
         updateSlider();
         updateSlideCounter();
-        addSwipeNavigation();
+
+        addSwipeListeners(); // Add this line to initialize swipe events
     }
 
     function preloadProjectImages(project) {
@@ -224,66 +225,21 @@ document.addEventListener('DOMContentLoaded', () => {
         return filteredProjects.sort(() => 0.5 - Math.random()).slice(0, count);
     }
 
-    function handleSwipe(element, onSwipeLeft, onSwipeRight) {
-        let touchStartX = 0;
-        let touchEndX = 0;
-        
-        element.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, false);
-        
-        element.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipeGesture();
-        }, false);
-        
-        function handleSwipeGesture() {
-            if (touchStartX - touchEndX > 50) {
-                onSwipeLeft();
-            } else if (touchEndX - touchStartX > 50) {
-                onSwipeRight();
-            }
+    sliderNavLeft.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            updateSlider();
+            updateSlideCounter();
         }
-    }
+    });
 
-    function addSwipeNavigation() {
-        handleSwipe(projectSlider, 
-            () => {
-                if (currentSlide < project.slides.length - 1) {
-                    currentSlide++;
-                    updateSlider();
-                    updateSlideCounter();
-                } else {
-                    showRelatedProjects();
-                }
-            },
-            () => {
-                if (currentSlide > 0) {
-                    currentSlide--;
-                    updateSlider();
-                    updateSlideCounter();
-                }
-            }
-        );
-    }
-
-    projectSlider.addEventListener('click', (e) => {
-        const clickX = e.clientX;
-        const sliderWidth = projectSlider.offsetWidth;
-        if (clickX > sliderWidth / 2) {
-            if (currentSlide < project.slides.length - 1) {
-                currentSlide++;
-                updateSlider();
-                updateSlideCounter();
-            } else {
-                showRelatedProjects();
-            }
+    sliderNavRight.addEventListener('click', () => {
+        if (currentSlide < project.slides.length - 1) {
+            currentSlide++;
+            updateSlider();
+            updateSlideCounter();
         } else {
-            if (currentSlide > 0) {
-                currentSlide--;
-                updateSlider();
-                updateSlideCounter();
-            }
+            showRelatedProjects();
         }
     });
 
@@ -314,4 +270,44 @@ document.addEventListener('DOMContentLoaded', () => {
     projectInfoContainer.addEventListener('mouseleave', () => {
         projectInfoContainer.style.overflowX = 'hidden';
     });
+
+    function addSwipeListeners() {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        projectSlider.addEventListener('touchstart', handleTouchStart, false);
+        projectSlider.addEventListener('touchend', handleTouchEnd, false);
+
+        function handleTouchStart(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleGesture();
+        }
+
+        function handleGesture() {
+            const swipeThreshold = 50; // Minimum required distance for a swipe
+
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe left (next slide)
+                if (currentSlide < project.slides.length - 1) {
+                    currentSlide++;
+                    updateSlider();
+                    updateSlideCounter();
+                } else {
+                    showRelatedProjects();
+                }
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe right (previous slide)
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateSlider();
+                    updateSlideCounter();
+                }
+            }
+        }
+    }
 });
