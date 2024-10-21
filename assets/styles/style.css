@@ -333,6 +333,10 @@ body.dark-mode #credits-mobile a {
         justify-content: space-between;
     }
 
+    #fullscreen-slider {
+        z-index: 1;
+    }
+
 
 
 }
