@@ -110,11 +110,15 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateSlider() {
         const slide = project.slides[currentSlide];
         let slideHTML = '';
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= 768; // Define mobile breakpoint
 
         switch (slide.layout) {
             case 'single-contain':
+                slideHTML = createSingleSlideHTML(slide);
+                break;
             case 'single-cover':
+                slideHTML = createSingleSlideHTML(slide, isMobile);
+                break;
             case 'single-contain-with-margin':
                 slideHTML = createSingleSlideHTML(slide);
                 break;
@@ -146,12 +150,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function createSingleSlideHTML(slide) {
+    function createSingleSlideHTML(slide, isMobile = false) {
         const img = preloadedImages[currentSlide][0];
+        const mobileClass = isMobile && slide.layout === 'single-cover' ? 'mobile-contain' : '';
         if (slide.layout === 'single-contain-with-margin') {
-            return `<div class="contain-with-margin"><img src="${img.src}" alt="" class="${slide.layout}"></div>`;
+            return `<div class="contain-with-margin"><img src="${img.src}" alt="" class="${slide.layout} ${mobileClass}"></div>`;
         }
-        return `<img src="${img.src}" alt="" class="${slide.layout}">`;
+        return `<img src="${img.src}" alt="" class="${slide.layout} ${mobileClass}">`;
     }
 
     function createDesktopSplitSlideHTML(slide) {
@@ -314,4 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    window.addEventListener('resize', () => {
+        updateSlider();
+    });
 });

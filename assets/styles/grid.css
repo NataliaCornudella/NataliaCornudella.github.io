@@ -22,7 +22,6 @@ body {
     cursor: pointer;
     font-family: 'SwizzyRegular', sans-serif;
     font-size: 12px;
-    line-height: 14px;
     padding: 0;
     padding: 1px 0px 0px 0px;
 }
@@ -146,6 +145,11 @@ body {
         display: block; /* or flex, depending on your layout */
     }
 
+
+    .variant-3 .project-info .project-details {
+        display: block;
+    }
+
     .variant-button {
         display: none;
     }
@@ -155,7 +159,6 @@ body {
         background-color: black;
         color: white;
         font-size: 10px;
-        line-height: 12px;
     }
 }
 

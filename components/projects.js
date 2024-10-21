@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 imageWrapper.style.maxHeight = '0';
                 imageWrapper.style.padding = '0';
                 imageWrapper.style.margin = '0';
-                projectInfo.style.maxHeight = '100px'; // Adjust this value based on your design
+                projectInfo.style.maxHeight = ''; // Remove the fixed height
                 projectInfo.style.padding = ''; // Reset to default
                 projectInfo.style.margin = ''; // Reset to default
             } else {
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 imageWrapper.style.maxHeight = '100%';
                 imageWrapper.style.padding = ''; // Reset to default
                 imageWrapper.style.margin = ''; // Reset to default
-                projectInfo.style.maxHeight = '100px'; // Adjust this value based on your design
+                projectInfo.style.maxHeight = ''; // Remove the fixed height
                 projectInfo.style.padding = ''; // Reset to default
                 projectInfo.style.margin = ''; // Reset to default
             }

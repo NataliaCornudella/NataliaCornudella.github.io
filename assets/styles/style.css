@@ -73,6 +73,7 @@ p, .project-info, #slide-counter {
 h1 {
     font-family: 'SwizzyMedium', sans-serif;
     font-size: 18px;
+    line-height: 20px;
     font-weight: normal;
 }
 
@@ -313,6 +314,7 @@ body.dark-mode #credits-mobile a {
 
     h1 {
         font-size: 14px;
+        line-height: 16px;
     }
 
     a {
