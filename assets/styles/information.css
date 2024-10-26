@@ -54,6 +54,7 @@
     color: var(--link-color);
     font-family: 'SwizzyRegular', sans-serif;
     font-size: 0.75rem; /* 12px */
+    line-height: 0.75rem;    /* 12px */
 }
 
 #information-section #instagram-link:hover,
