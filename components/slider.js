@@ -212,4 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
             moveSlider(1);
         }
     });
+
+    // Add keyboard navigation for slider
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+            moveSlider(-1);
+        } else if (event.key === 'ArrowRight') {
+            moveSlider(1);
+        }
+    });
 });

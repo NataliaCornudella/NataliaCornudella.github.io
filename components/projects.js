@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading project data:', error));
 
     function renderProjects() {
+        if (!projectGrid) {
+            console.error('Project grid not found');
+            return;
+        }
+
         projectGrid.innerHTML = projects.map((project, index) => createProjectItem(project, index)).join('');
 
         const projectItems = document.querySelectorAll('.project-item');
@@ -50,7 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function applyVariant(variant) {
-        const projectGrid = document.getElementById('project-grid');
+        if (!projectGrid) {
+            console.error('Project grid not found');
+            return;
+        }
+
         projectGrid.className = `variant-${variant}`;
 
         const projectItems = projectGrid.querySelectorAll('.project-item');
@@ -59,43 +68,39 @@ document.addEventListener('DOMContentLoaded', () => {
             const imageWrapper = item.querySelector('.project-image-wrapper');
             const projectInfo = item.querySelector('.project-info');
 
-            // Set different transition durations for different properties
             const transition = 'max-height 0.2s ease-in-out, padding 0.2s ease-in-out, margin 0.2s ease-in-out, opacity 0.2s ease-in-out';
             
             imageWrapper.style.transition = transition;
             projectInfo.style.transition = transition;
 
             if (variant === '2') {
-                // Only thumbnails
                 projectInfo.style.maxHeight = '0';
                 projectInfo.style.padding = '0';
                 projectInfo.style.margin = '0';
                 imageWrapper.style.flexGrow = '1';
                 imageWrapper.style.maxHeight = '100%';
             } else if (variant === '3') {
-                // Only text
                 imageWrapper.style.maxHeight = '0';
                 imageWrapper.style.padding = '0';
                 imageWrapper.style.margin = '0';
-                projectInfo.style.maxHeight = ''; // Remove the fixed height
-                projectInfo.style.padding = ''; // Reset to default
-                projectInfo.style.margin = ''; // Reset to default
+                projectInfo.style.maxHeight = '';
+                projectInfo.style.padding = '';
+                projectInfo.style.margin = '';
             } else {
-                // Default: image + text
                 imageWrapper.style.flexGrow = '1';
                 imageWrapper.style.maxHeight = '100%';
-                imageWrapper.style.padding = ''; // Reset to default
-                imageWrapper.style.margin = ''; // Reset to default
-                projectInfo.style.maxHeight = ''; // Remove the fixed height
-                projectInfo.style.padding = ''; // Reset to default
-                projectInfo.style.margin = ''; // Reset to default
+                imageWrapper.style.padding = '';
+                imageWrapper.style.margin = '';
+                projectInfo.style.maxHeight = '';
+                projectInfo.style.padding = '';
+                projectInfo.style.margin = '';
             }
         });
     }
 
     function handleMobileVariantClick() {
         let currentVariant = parseInt(variantButtonMobile.dataset.variant);
-        currentVariant = currentVariant % 3 + 1; // Cycle through 1, 2, 3
+        currentVariant = currentVariant % 3 + 1;
         variantButtonMobile.dataset.variant = currentVariant;
         variantButtonMobile.textContent = currentVariant;
         applyVariant(currentVariant.toString());
@@ -110,9 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    variantButtonMobile.addEventListener('click', handleMobileVariantClick);
+    if (variantButtonMobile) {
+        variantButtonMobile.addEventListener('click', handleMobileVariantClick);
+    } else {
+        console.error('Mobile variant button not found');
+    }
 
-    // Initialize with the first variant
     applyVariant('1');
 });
 

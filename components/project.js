@@ -333,4 +333,25 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.warn('Project info container not found');
     }
+
+    // Add keyboard navigation for slider
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+            // Navigate to the previous slide
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlider();
+                updateSlideCounter();
+            }
+        } else if (event.key === 'ArrowRight') {
+            // Navigate to the next slide
+            if (currentSlide < project.slides.length - 1) {
+                currentSlide++;
+                updateSlider();
+                updateSlideCounter();
+            } else {
+                showRelatedProjects();
+            }
+        }
+    });
 });
