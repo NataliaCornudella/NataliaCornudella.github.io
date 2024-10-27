@@ -174,28 +174,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addSwipeListeners() {
         let touchStartX = 0;
+        let touchStartY = 0;
         let touchEndX = 0;
+        let touchEndY = 0;
 
         slider.addEventListener('touchstart', handleTouchStart, false);
         slider.addEventListener('touchend', handleTouchEnd, false);
 
         function handleTouchStart(event) {
             touchStartX = event.changedTouches[0].screenX;
+            touchStartY = event.changedTouches[0].screenY;
         }
 
         function handleTouchEnd(event) {
             touchEndX = event.changedTouches[0].screenX;
+            touchEndY = event.changedTouches[0].screenY;
             handleGesture();
         }
 
         function handleGesture() {
             const swipeThreshold = 50;
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
 
-            if (touchEndX < touchStartX - swipeThreshold) {
-                moveSlider(1);
-            }
-            if (touchEndX > touchStartX + swipeThreshold) {
-                moveSlider(-1);
+            // If horizontal swipe is stronger than vertical, use horizontal
+            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    moveSlider(1);
+                }
+                if (touchEndX > touchStartX + swipeThreshold) {
+                    moveSlider(-1);
+                }
+            } 
+            // If vertical swipe is stronger, use vertical
+            else if (Math.abs(deltaY) > swipeThreshold) {
+                if (touchEndY < touchStartY) { // Swipe up
+                    moveSlider(1);
+                }
+                if (touchEndY > touchStartY) { // Swipe down
+                    moveSlider(-1);
+                }
             }
         }
     }
@@ -220,5 +238,23 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (event.key === 'ArrowRight') {
             moveSlider(1);
         }
+    });
+
+    // Add mousemove event listener to change cursor based on position
+    slider.addEventListener('mousemove', (event) => {
+        const sliderRect = slider.getBoundingClientRect();
+        const mouseX = event.clientX - sliderRect.left;
+        const sliderWidth = sliderRect.width;
+
+        if (mouseX < sliderWidth / 2) {
+            slider.style.cursor = 'w-resize';
+        } else {
+            slider.style.cursor = 'e-resize';
+        }
+    });
+
+    // Reset cursor when mouse leaves the slider
+    slider.addEventListener('mouseleave', () => {
+        slider.style.cursor = 'default';
     });
 });

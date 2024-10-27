@@ -232,39 +232,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addSwipeListeners() {
         let touchStartX = 0;
+        let touchStartY = 0;
         let touchEndX = 0;
+        let touchEndY = 0;
 
         projectSlider.addEventListener('touchstart', handleTouchStart, false);
         projectSlider.addEventListener('touchend', handleTouchEnd, false);
 
         function handleTouchStart(event) {
             touchStartX = event.changedTouches[0].screenX;
+            touchStartY = event.changedTouches[0].screenY;
         }
 
         function handleTouchEnd(event) {
             touchEndX = event.changedTouches[0].screenX;
+            touchEndY = event.changedTouches[0].screenY;
             handleGesture();
         }
 
         function handleGesture() {
             const swipeThreshold = 50;
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
 
-            if (touchEndX < touchStartX - swipeThreshold) {
-                // Swipe left (next slide)
-                if (currentSlide < project.slides.length - 1) {
-                    currentSlide++;
-                    updateSlider();
-                    updateSlideCounter();
-                } else {
-                    showRelatedProjects();
+            // If horizontal swipe is stronger than vertical, use horizontal
+            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    if (currentSlide < project.slides.length - 1) {
+                        currentSlide++;
+                        updateSlider();
+                        updateSlideCounter();
+                    } else {
+                        showRelatedProjects();
+                    }
                 }
-            }
-            if (touchEndX > touchStartX + swipeThreshold) {
-                // Swipe right (previous slide)
-                if (currentSlide > 0) {
-                    currentSlide--;
-                    updateSlider();
-                    updateSlideCounter();
+                if (touchEndX > touchStartX + swipeThreshold) {
+                    if (currentSlide > 0) {
+                        currentSlide--;
+                        updateSlider();
+                        updateSlideCounter();
+                    }
+                }
+            } 
+            // If vertical swipe is stronger, use vertical
+            else if (Math.abs(deltaY) > swipeThreshold) {
+                if (touchEndY < touchStartY) { // Swipe up
+                    if (currentSlide < project.slides.length - 1) {
+                        currentSlide++;
+                        updateSlider();
+                        updateSlideCounter();
+                    } else {
+                        showRelatedProjects();
+                    }
+                }
+                if (touchEndY > touchStartY) { // Swipe down
+                    if (currentSlide > 0) {
+                        currentSlide--;
+                        updateSlider();
+                        updateSlideCounter();
+                    }
                 }
             }
         }
@@ -272,6 +298,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', () => {
         updateSlider();
+    });
+
+    // Add mousemove event listener to change cursor based on position
+    projectSlider.addEventListener('mousemove', (event) => {
+        const sliderRect = projectSlider.getBoundingClientRect();
+        const mouseX = event.clientX - sliderRect.left;
+        const sliderWidth = sliderRect.width;
+
+        if (mouseX < sliderWidth / 2) {
+            projectSlider.style.cursor = 'w-resize';
+        } else {
+            projectSlider.style.cursor = 'e-resize';
+        }
+    });
+
+    // Reset cursor when mouse leaves the slider
+    projectSlider.addEventListener('mouseleave', () => {
+        projectSlider.style.cursor = 'default';
     });
 
     // Add click event listener for slider navigation

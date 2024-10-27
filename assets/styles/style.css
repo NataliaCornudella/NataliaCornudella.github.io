@@ -186,23 +186,6 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer;
-}
-
-#slider-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    pointer-events: auto;
-}
-
-.slider-nav-left, .slider-nav-right {
-    flex: 1;
-    cursor: pointer;
-    pointer-events: auto;
 }
 
 footer {
@@ -433,28 +416,6 @@ body.dark-mode {
     /* ... other dark mode variables ... */
 }
 
-/* Add these base styles at the top of your CSS */
-a,
-button,
-.project-item,
-.project-info,
-.slider-nav-left,
-.slider-nav-right,
-#fullscreen-slider,
-#dark-mode-toggle,
-.variant-button,
-.variant-button-mobile {
-    cursor: pointer !important;
-    pointer-events: auto !important;
-}
-
-/* Make sure the body and main containers don't interfere */
-body,
-main,
-#project-slider,
-.project-item-wrapper {
-    pointer-events: auto;
-}
 
 /* Ensure clickable areas are properly handled */
 #slider-nav {
@@ -467,12 +428,6 @@ main,
     pointer-events: auto;
 }
 
-.slider-nav-left, 
-.slider-nav-right {
-    flex: 1;
-    cursor: pointer;
-    pointer-events: auto;
-}
 
 /* Fix project items hover state */
 .project-item-wrapper:hover {
@@ -490,3 +445,4 @@ main,
     cursor: pointer;
     pointer-events: auto;
 }
+
