@@ -43,25 +43,26 @@
 }
 
 html, body {
-    height: 100%;
+    min-height: 400vh;
     margin: 0;
     padding: 0;
+    position: static;
 }
+
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    overflow: visible;
     font-family: 'SwizzyRegular', sans-serif; /* Note: removed duplicate font-family */
-    display: flex;
     flex-direction: column;
-    background-color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: scroll; /* Allow vertical scrolling */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
+    background-color: white;
 }
 
 header {
@@ -394,11 +395,6 @@ body {
     overflow-y: scroll; /* Allow vertical scrolling */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
-}
-
-/* Ensure the page takes up at least the full viewport height */
-html, body {
-    min-height: 100vh;
 }
 
 img.lazy {
