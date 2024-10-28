@@ -173,15 +173,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function createMobileSplitSlideHTML(slide) {
-        const isBottomCover = slide.layout === 'double-split-left-cover';
+        const isRightCover = slide.layout === 'double-split-right-cover';
         const [img1, img2] = preloadedImages[currentSlide];
         return `
-            <div class="split-slide-mobile ${isBottomCover ? 'bottom-cover' : 'top-cover'}">
+            <div class="split-slide-mobile ${isRightCover ? 'bottom-cover' : 'top-cover'}">
                 <div class="split-top">
-                    <img src="${isBottomCover ? img2.src : img1.src}" alt="" class="${isBottomCover ? 'contained-image' : 'cover-image'}">
+                    <img src="${isRightCover ? img1.src : img1.src}" alt="" class="${isRightCover ? 'contained-image' : 'cover-image'}">
                 </div>
                 <div class="split-bottom">
-                    <img src="${isBottomCover ? img1.src : img2.src}" alt="" class="${isBottomCover ? 'cover-image' : 'contained-image'}">
+                    <img src="${isRightCover ? img2.src : img2.src}" alt="" class="${isRightCover ? 'cover-image' : 'contained-image'}">
                 </div>
             </div>
         `;
