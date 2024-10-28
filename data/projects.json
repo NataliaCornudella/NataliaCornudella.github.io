@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Perdió este culo",
-      "year": "2023",
+      "year": "2024",
       "client": "BAD GYAL",
       "mainImage": "assets/images/Bad Gyal_Perdió este culo/Print analogico.webp",
       "slides": [
@@ -25,7 +25,7 @@
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/Bad Gyal_Perdió este culo/martiño 2.webp"]
+          "images": ["assets/images/Bad Gyal_Perdió este culo/martiño 1.webp"]
         },
         {
           "layout": "double-split-left-cover",
@@ -48,7 +48,7 @@
     {
       "id": 2,
       "title": "Suzete",
-      "year": "2023",
+      "year": "2024",
       "client": "PERSONAL",
       "mainImage": "assets/images/Suzete/Suzete promo16572 2 còpia 2.webp",
       "slides": [
@@ -108,7 +108,7 @@
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19827.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19781.webp"]
+          "images": ["assets/images/MARGES AMPLES/NicoWilliams_Nike19827.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19781.webp"]
         },
         {
           "layout": "single-contain",
@@ -164,7 +164,7 @@
     {
       "id": 6,
       "title": "Metamorfosis",
-      "year": "2021",
+      "year": "2023",
       "client": "FENERS",
       "mainImage": "assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy.webp",
       "slides": [
@@ -207,7 +207,7 @@
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/Mushka_Vanidad/Mushka Vanidad Nike11462.webp", "assets/images/Mushka_Vanidad/Retrat Vanidad11656.webp"]
+          "images": ["assets/images/MARGES AMPLES/Mushka Vanidad Nike11462 copia.webp", "assets/images/Mushka_Vanidad/Retrat Vanidad11656.webp"]
         },
         {
           "layout": "single-contain",
@@ -222,7 +222,7 @@
     {
       "id": 8,
       "title": "Sin Carné",
-      "year": "2021",
+      "year": "2023",
       "client": "BAD GYAL",
       "mainImage": "assets/images/Bad Gyal_Sin Carné/1.webp",
       "slides": [
@@ -277,7 +277,7 @@
       "slides": [
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/MARGES AMPLES/04-22.webp", "assets/images/Rose Gold Iphone_Editorial/04-24.webp"]
+          "images": ["assets/images/MARGES AMPLES/04-22 copia.webp", "assets/images/Rose Gold Iphone_Editorial/04-24.webp"]
         },
         {
           "layout": "single-contain-with-margin",
@@ -300,7 +300,7 @@
     {
       "id": 10,
       "title": "bbtrickz x NP",
-      "year": "2021",
+      "year": "2024",
       "client": "NUDE PROJECT",
       "mainImage": "assets/images/bbtrickz_Nude Project/1.webp",
       "slides": [
@@ -407,11 +407,7 @@
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/Carlotta VDM Test/1.webp", "assets/images/Carlotta VDM Test/3.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Carlotta VDM Test/8.webp"]
+          "images": ["assets/images/MARGES AMPLES/1.webp", "assets/images/Carlotta VDM Test/3.webp"]
         },
         {
           "layout": "single-contain",
@@ -426,7 +422,7 @@
     {
       "id": 16,
       "title": "Insomnia Studio",
-      "year": "2021",
+      "year": "2023",
       "client": "INSOMNIA STUDIO",
       "mainImage": "assets/images/Insomnia Studio/1.webp",
       "slides": [
@@ -455,7 +451,7 @@
     {
       "id": 15,
       "title": "Mushka x Acero",
-      "year": "2024",
+      "year": "2023",
       "client": "ACERO MAGAZINE",
       "mainImage": "assets/images/Mushka_Acero/1.webp",
       "slides": [
@@ -539,7 +535,7 @@
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/Julieta/2.webp", "assets/images/MARGES AMPLES/4 còpia.webp"]
+          "images": ["assets/images/Julieta/2.webp", "assets/images/MARGES AMPLES/4 còpia copia.webp"]
         },
         {
           "layout": "single-contain",
@@ -549,7 +545,7 @@
     },
     {
       "id": 18,
-      "title": "Chulo pt.2",
+      "title": "Chulo pt.2 x  Bad Gyal, Tokischa i Young Miko",
       "year": "2023",
       "client": "BAD GYAL",
       "mainImage": "assets/images/Bad Gyal_Chulo pt.2/DSCF7465.webp",
@@ -563,16 +559,16 @@
           "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7479.webp"]
         },
         {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7484.webp", "assets/images/Bad Gyal_Chulo pt.2/DSCF7481.webp"]
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7481.webp", "assets/images/Bad Gyal_Chulo pt.2/DSCF7484.webp"]
         },
         {
           "layout": "single-contain",
           "images": ["assets/images/Bad Gyal_Chulo pt.2/DSCF7491.webp"]
         },
         {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/Bad Gyal_Chulo pt.2/R1-05885-014A copy.webp", "assets/images/Bad Gyal_Chulo pt.2/R1-05885-012A copy.webp"]
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Bad Gyal_Chulo pt.2/R1-05885-012A copy.webp", "assets/images/MARGES AMPLES/R1-05885-014A copy copia.webp"]
         },
         {
           "layout": "single-contain",
@@ -591,7 +587,7 @@
     {
       "id": 13,
       "title": "Apolonia Lapiedra",
-      "year": "2021",
+      "year": "2023",
       "client": "EL SALSEO",
       "mainImage": "assets/images/Apolonia Lapiedra/CampañaElSalseo_17_03_23-1942.webp",
       "slides": [
@@ -653,7 +649,7 @@
     {
       "id": 20,
       "title": "Palau Sant Jordi",
-      "year": "2021",
+      "year": "2023",
       "client": "BAD GYAL",
       "mainImage": "assets/images/Bad Gyal_Palau Sant Jordi/1.webp",
       "slides": [
@@ -678,7 +674,7 @@
     {
       "id": 21,
       "title": "Nude Scouts",
-      "year": "2022",
+      "year": "2023",
       "client": "NUDE PROJECT",
       "mainImage": "assets/images/Nude Scouts x Nude Project/10.webp",
       "slides": [
@@ -759,7 +755,7 @@
       "slides": [
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/Maria Hein_Gira 2024/1 còpia.webp", "assets/images/Maria Hein_Gira 2024/MARIA HEIN 3D10564.webp"]
+          "images": ["assets/images/MARGES AMPLES/1 còpia copia.webp", "assets/images/Maria Hein_Gira 2024/MARIA HEIN 3D10564.webp"]
         },
         {
           "layout": "single-cover",
@@ -808,7 +804,7 @@
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/Cold Culture_Commercial 2024/Cold Culture Red17431 copy 2.webp", "assets/images/Cold Culture_Commercial 2024/Cold Culture Red17368 copy 2.webp"]
+          "images": ["assets/images/MARGES AMPLES/Cold Culture Red17431 copy 2.webp", "assets/images/Cold Culture_Commercial 2024/Cold Culture Red17368 copy 2.webp"]
         },
         {
           "layout": "single-contain",
@@ -827,7 +823,7 @@
     {
       "id": 25,
       "title": "Le Plaisir",
-      "year": "2021",
+      "year": "2022",
       "client": "LE PLAISIR",
       "mainImage": "assets/images/Le Plaisir_Fashion Film/1.webp",
       "slides": [
@@ -889,7 +885,7 @@
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/Bad Gyal_Pussy/8.webp", "assets/images/Bad Gyal_Pussy/11.webp"]
+          "images": ["assets/images/Bad Gyal_Pussy/8.webp", "assets/images/MARGES AMPLES/11 copia.webp"]
         },
         {
           "layout": "single-contain-with-margin",
@@ -907,7 +903,7 @@
     {
       "id": 27,
       "title": "Alexia Putellas, All Power Issue",
-      "year": "2021",
+      "year": "2022",
       "client": "SOCCERBIBLE",
       "mainImage": "assets/images/Alexia Putellas_Soccerbible All Power Issue/1.webp",
       "slides": [
@@ -956,7 +952,7 @@
     {
       "id": 29,
       "title": "Razzmatazz",
-      "year": "2021",
+      "year": "2023",
       "client": "BELÉN AGUILERA",
       "mainImage": "assets/images/Belén Aguilera_Razzmatazz/1.webp",
       "slides": [
@@ -1010,7 +1006,7 @@
     {
       "id": 31,
       "title": "Adidas Confirmed",
-      "year": "2021",
+      "year": "2022",
       "client": "ADIDAS",
       "mainImage": "assets/images/Borja Iglesias & Héctor Bellerín_Adidas Confirmed/1.webp",
       "slides": [
@@ -1051,7 +1047,7 @@
     {
       "id": 32,
       "title": "Real G",
-      "year": "2021",
+      "year": "2022",
       "client": "BAD GYAL x QUEVEDO",
       "mainImage": "assets/images/Bad Gyal_Real G/12.webp",
       "slides": [
@@ -1121,7 +1117,7 @@
     {
       "id": 34,
       "title": "Blin Blin",
-      "year": "2021",
+      "year": "2020",
       "client": "BAD GYAL",
       "mainImage": "assets/images/Bad Gyal_Blin Blin/1.webp",
       "slides": [
@@ -1212,7 +1208,7 @@
     {
       "id": 37,
       "title": "Sin Final",
-      "year": "2021",
+      "year": "2024",
       "client": "ANA GUERRA",
       "mainImage": "assets/images/Ana Guerra_Sin Final/1.webp",
       "slides": [
@@ -1222,7 +1218,7 @@
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/Ana Guerra_Sin Final/14.webp", "assets/images/Ana Guerra_Sin Final/12 còpia.webp"]
+          "images": ["assets/images/Ana Guerra_Sin Final/14.webp", "assets/images/MARGES AMPLES/12 còpia copia.webp"]
         },
         {
           "layout": "single-contain",
@@ -1233,7 +1229,7 @@
     {
       "id": 38,
       "title": "Bom Bom",
-      "year": "2021",
+      "year": "2020",
       "client": "BAD GYAL",
       "mainImage": "assets/images/Bad Gyal_ Bom Bom/1.webp",
       "slides": [

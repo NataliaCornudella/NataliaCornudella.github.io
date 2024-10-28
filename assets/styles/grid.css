@@ -142,11 +142,23 @@ main {
 /* Mobile styles */
 @media screen and (max-width: 768px) {
     #project-grid {
-        grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr)); /* 100px */
+        grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
     }
 
     .project-details {
         display: none;
+    }
+
+    .project-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        display: block;
+    }
+
+    .project-info-content {
+        overflow: hidden;
     }
 
     .mobile-hide {
@@ -158,9 +170,8 @@ main {
     }
 
     .variant-3 .mobile-hide {
-        display: block; /* or flex, depending on your layout */
+        display: block;
     }
-
 
     .variant-3 .project-info .project-details {
         display: block;
