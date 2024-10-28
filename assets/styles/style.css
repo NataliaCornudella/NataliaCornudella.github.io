@@ -42,17 +42,20 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
+    height: -webkit-fill-available;
     min-height: 100%;
-    margin: 0;
-    padding: 0;
-    position: static;
 }
 
 
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+    position: static;
     overflow: visible;
     font-family: 'SwizzyRegular', sans-serif; /* Note: removed duplicate font-family */
     flex-direction: column;
