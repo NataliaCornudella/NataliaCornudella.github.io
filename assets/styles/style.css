@@ -47,6 +47,12 @@ html {
     min-height: 100%;
 }
 
+/* Allow scrolling on projects page */
+.projects-main {
+    overflow-y: auto;
+    height: 100%;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
 
 body {
     display: flex;
