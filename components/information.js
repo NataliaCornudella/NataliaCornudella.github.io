@@ -10,15 +10,41 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.text())
         .then(html => {
             informationSection.innerHTML = html;
-            // Force a reflow to ensure content is properly laid out
-            informationContainer.offsetHeight;
+            informationContainer.offsetHeight; // Force reflow
         });
 
     // Check if we're on the projects page
-    const isProjectsPage = window.location.pathname.includes('projects.html');
+    const isProjectsPage = document.body.classList.contains('projects-page');
 
     if (infoButton) {
-        infoButton.addEventListener('click', toggleInformationSection);
+        infoButton.addEventListener('click', async (e) => {
+            e.preventDefault();
+            
+            if (isProjectsPage) {
+                // Projects page specific behavior
+                const lazyImages = document.querySelectorAll('img.lazy');
+                const loadPromises = Array.from(lazyImages).map(img => {
+                    return new Promise((resolve) => {
+                        if (img.classList.contains('lazy')) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            img.onload = () => resolve();
+                            img.onerror = () => resolve();
+                        } else {
+                            resolve();
+                        }
+                    });
+                });
+
+                await Promise.all(loadPromises);
+                informationSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // Original behavior for other pages
+                informationContainer.classList.toggle('visible');
+                document.body.classList.toggle('info-open');
+                updateElementPositions();
+            }
+        });
     }
 
     // Add event listener to the information container instead of the button
