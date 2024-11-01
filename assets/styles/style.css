@@ -18,9 +18,9 @@
 
 @font-face {
     font-family: 'SwizzyMedium';
-    src: url('../fonts/Swizzy-Trial-Medium.woff2') format('woff2'),
-         url('../fonts/Swizzy-Trial-Medium.woff') format('woff'),
-         url('../fonts/Swizzy-Trial-Medium.ttf') format('truetype');
+    src: url('../fonts/Swizzy-Medium.woff2') format('woff2'),
+         url('../fonts/Swizzy-Medium.woff') format('woff'),
+         url('../fonts/Swizzy-Medium.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
@@ -28,9 +28,9 @@
 
 @font-face {
     font-family: 'SwizzyRegular';
-    src: url('../fonts/Swizzy-Trial-Regular.woff2') format('woff2'),
-         url('../fonts/Swizzy-Trial-Regular.woff') format('woff'),
-         url('../fonts/Swizzy-Trial-Regular.ttf') format('truetype');
+    src: url('../fonts/Swizzy-Regular.woff2') format('woff2'),
+         url('../fonts/Swizzy-Regular.woff') format('woff'),
+         url('../fonts/Swizzy-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
