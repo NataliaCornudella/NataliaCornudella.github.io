@@ -103,39 +103,39 @@
       "title": "Ferran Torres",
       "year": "2024",
       "client": "Under Armour",
-      "mainImage": "assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0175 A2_FULLRES còpia.webp",
+      "mainImage": "assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour4.webp",
       "slides": [
         {
           "layout": "single-contain",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0175 A2_FULLRES còpia.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour4.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0399 2 A2_FULLRES còpia.webp", "assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0296 A2_FULLRES.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour8.webp", "assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour6.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0127 A3_FULLRES còpia.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour3.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0337 A2_FULLRES.webp","assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0105 A2_FULLRES.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour7.webp","assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour2.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0103 A2_FULLRES.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour1.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0426 2 A2_FULLRES.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour10.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0450 A2_FULLRES.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour11.webp"]
         },
         {
           "layout": "double-split-left-cover",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0410 A2_FULLRES.webp", "assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0467 A2_FULLRES.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour9.webp", "assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour12.webp"]
         }
       ]
     },
