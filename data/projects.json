@@ -2,6 +2,59 @@
   "projects": [
     {
       "id": 1,
+      "title": "Lilia",
+      "year": "2024",
+      "client": "Generation Models",
+      "mainImage": "assets/images/Lilia Ballet Editorial/natalia (1).webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (1).webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (4).webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (2).webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (6).webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (14).webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (10).webp"]
+        },
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (7).webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (15).webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (16).webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (18).webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Lilia Ballet Editorial/natalia (17).webp"]
+        }
+      ]
+    },
+    {
+      "id": 2,
       "title": "Perdió este culo",
       "year": "2024",
       "client": "BAD GYAL",
@@ -46,7 +99,85 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
+      "title": "Ferran Torres",
+      "year": "2024",
+      "client": "Under Armour",
+      "mainImage": "assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0175 A2_FULLRES còpia.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0175 A2_FULLRES còpia.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0399 2 A2_FULLRES còpia.webp", "assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0296 A2_FULLRES.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0127 A3_FULLRES còpia.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0337 A2_FULLRES.webp","assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0105 A2_FULLRES.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0103 A2_FULLRES.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0426 2 A2_FULLRES.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0450 A2_FULLRES.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0410 A2_FULLRES.webp", "assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0467 A2_FULLRES.webp"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tami Tsunami",
+      "year": "2024",
+      "client": "Tami Tsunami",
+      "mainImage": "assets/images/Tami Tsunami/TAMITSUNAMI23692.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23692.webp"]
+        },
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23620.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23579.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23392.webp", "assets/images/Tami Tsunami/TAMITSUNAMI23460.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23511.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23225.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23273.webp"]
+        }
+      ]
+    },
+    {
+      "id": 6,
       "title": "Suzete",
       "year": "2024",
       "client": "PERSONAL",
@@ -72,7 +203,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 7,
       "title": "Bikoko",
       "year": "2022",
       "client": "7AM",
@@ -96,7 +227,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 8,
       "title": "Nico Williams x Nike",
       "year": "2024",
       "client": "NIKE",
@@ -137,7 +268,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 9,
       "title": "PKM w/ Bad Gyal",
       "year": "2023",
       "client": "ESTRELLA DAMM",
@@ -162,7 +293,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 10,
       "title": "Metamorfosis",
       "year": "2023",
       "client": "FENERS",
@@ -195,7 +326,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 11,
       "title": "Mushka x Vanidad",
       "year": "2024",
       "client": "VANIDAD MAGAZINE",
@@ -220,7 +351,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 12,
       "title": "Sin Carné",
       "year": "2023",
       "client": "BAD GYAL",
@@ -269,7 +400,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 13,
       "title": "Rose Gold Iphone",
       "year": "2022",
       "client": "VEIN MAGAZINE",
@@ -298,8 +429,8 @@
       ]
     },
     {
-      "id": 10,
-      "title": "bbtrickz x NP",
+      "id": 14,
+      "title": "bbtrickz",
       "year": "2024",
       "client": "NUDE PROJECT",
       "mainImage": "assets/images/bbtrickz_Nude Project/1.webp",
@@ -327,7 +458,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 15,
       "title": "Fanático",
       "year": "2022",
       "client": "NETFLIX",
@@ -388,7 +519,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 16,
       "title": "Carlotta VDM",
       "year": "2024",
       "client": "PERSONAL",
@@ -420,7 +551,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 17,
       "title": "Insomnia Studio",
       "year": "2023",
       "client": "INSOMNIA STUDIO",
@@ -449,7 +580,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 18,
       "title": "Mushka x Acero",
       "year": "2023",
       "client": "ACERO MAGAZINE",
@@ -482,7 +613,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 19,
       "title": "Judas",
       "year": "2021",
       "client": "BAD GYAL",
@@ -523,7 +654,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 20,
       "title": "Julieta",
       "year": "2023",
       "client": "JULIETA",
@@ -544,7 +675,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": 21,
       "title": "Chulo pt.2 x  Bad Gyal, Tokischa i Young Miko",
       "year": "2023",
       "client": "BAD GYAL",
@@ -585,7 +716,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 22,
       "title": "Apolonia Lapiedra",
       "year": "2023",
       "client": "EL SALSEO",
@@ -618,7 +749,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 23,
       "title": "Meritxell de Soto",
       "year": "2024",
       "client": "TIME OUT",
@@ -647,7 +778,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 24,
       "title": "Palau Sant Jordi",
       "year": "2023",
       "client": "BAD GYAL",
@@ -672,7 +803,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 25,
       "title": "Nude Scouts",
       "year": "2023",
       "client": "NUDE PROJECT",
@@ -714,7 +845,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 26,
       "title": "Enamórate",
       "year": "2023",
       "client": "BAD GYAL x NICKI NICOLE",
@@ -747,7 +878,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 27,
       "title": "Maria Hein, Gira",
       "year": "2024",
       "client": "MARIA HEIN",
@@ -780,7 +911,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 28,
       "title": "Cold Culture",
       "year": "2024",
       "client": "COLD CULTURE",
@@ -821,7 +952,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 29,
       "title": "Le Plaisir",
       "year": "2022",
       "client": "LE PLAISIR",
@@ -853,7 +984,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 30,
       "title": "Pussy",
       "year": "2022",
       "client": "BAD GYAL",
@@ -901,7 +1032,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 31,
       "title": "Alexia Putellas, All Power Issue",
       "year": "2022",
       "client": "SOCCERBIBLE",
@@ -934,44 +1065,7 @@
       ]
     },
     {
-      "id": 28,
-      "title": "Sexy",
-      "year": "2022",
-      "client": "BAD GYAL",
-      "mainImage": "assets/images/Bad Gyal_Sexy/2. final.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Bad Gyal_Sexy/2. final.webp"]
-        },{
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Bad Gyal_Sexy/3 final.webp"]
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "title": "Razzmatazz",
-      "year": "2023",
-      "client": "BELÉN AGUILERA",
-      "mainImage": "assets/images/Belén Aguilera_Razzmatazz/1.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Belén Aguilera_Razzmatazz/1.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Belén Aguilera_Razzmatazz/R1-03865-018A.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Belén Aguilera_Razzmatazz/R1-03865-014A.webp"]
-        }
-      ]
-    },
-    {
-      "id": 30,
+      "id": 32,
       "title": "Flow 2000",
       "year": "2021",
       "client": "BAD GYAL",
@@ -1004,7 +1098,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 33,
       "title": "Adidas Confirmed",
       "year": "2022",
       "client": "ADIDAS",
@@ -1045,7 +1139,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 34,
       "title": "Real G",
       "year": "2022",
       "client": "BAD GYAL x QUEVEDO",
@@ -1082,7 +1176,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 35,
       "title": "Mantícora Vintage",
       "year": "2021",
       "client": "MANTÍCORA VINTAGE",
@@ -1115,7 +1209,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 36,
       "title": "Blin Blin",
       "year": "2020",
       "client": "BAD GYAL",
@@ -1152,7 +1246,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 37,
       "title": "Cupra Intruders",
       "year": "2024",
       "client": "CUPRA",
@@ -1177,7 +1271,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": 38,
       "title": "44",
       "year": "2021",
       "client": "BAD GYAL",
@@ -1206,7 +1300,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": 39,
       "title": "Sin Final",
       "year": "2024",
       "client": "ANA GUERRA",
@@ -1227,7 +1321,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": 40,
       "title": "Bom Bom",
       "year": "2020",
       "client": "BAD GYAL",
