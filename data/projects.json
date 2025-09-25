@@ -2,6 +2,166 @@
   "projects": [
     {
       "id": 1,
+      "title": "Silent Things Vol I",
+      "year": "2025",
+      "client": "Personal",
+      "mainImage": "assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-01.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-01.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-02.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-03.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-04.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-05.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-06.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-07.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Silent Things Vol I/WebP/Silent-Things-Vol1-08.webp"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "DaMe",
+      "year": "2025",
+      "client": "Bad Gyal",
+      "mainImage": "assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-5.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-5.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-6.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-4.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-3.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-9.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-2.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-1.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/DaMe 2025 Bad Gyal/WebP/Dame-BadGyal-10.webp"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Bikini Rojo",
+      "year": "2025",
+      "client": "Julieta",
+      "mainImage": "assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-01.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-01.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-02.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-03.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-04.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-05.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-07D.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-08.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Julieta-BikiniRojo/WebP/BikiniRojo-09.webp"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Duplexity Editorial",
+      "year": "2025",
+      "client": "Personal",
+      "mainImage": "assets/images/Duplexity Editorial 2025/Duplexity-01.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Duplexity Editorial 2025/Duplexity-01.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Duplexity Editorial 2025/Duplexity-02.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Duplexity Editorial 2025/Duplexity-03D.webp", "assets/images/Duplexity Editorial 2025/Duplexity-04D.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Duplexity Editorial 2025/Duplexity-05.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Duplexity Editorial 2025/Duplexity-06.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Duplexity Editorial 2025/Duplexity-07D.webp", "assets/images/Duplexity Editorial 2025/Duplexity-08D.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Duplexity Editorial 2025/Duplexity-09.webp"]
+        }
+      ]
+    },
+    {
+      "id": 5,
       "title": "Lilia",
       "year": "2024",
       "client": "Generation Models",
@@ -54,7 +214,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 6,
       "title": "Perdió este culo",
       "year": "2024",
       "client": "BAD GYAL",
@@ -99,7 +259,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 7,
       "title": "Ferran Torres",
       "year": "2024",
       "client": "Under Armour",
@@ -110,8 +270,8 @@
           "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour4.webp"]
         },
         {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour8.webp", "assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour6.webp"]
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour6.webp", "assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0399 2 A2_FULLRES còpia copia 2.webp"]
         },
         {
           "layout": "single-contain-with-margin",
@@ -119,7 +279,7 @@
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour7.webp","assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour2.webp"]
+          "images": ["assets/images/Ferran Torres Under Armour/FerranTorres-UnderArmour7.webp","assets/images/Ferran Torres Under Armour/FerranTorres x UnderArmour0105 A2_FULLRES copia 3.webp"]
         },
         {
           "layout": "single-contain",
@@ -140,44 +300,7 @@
       ]
     },
     {
-      "id": 4,
-      "title": "Tami Tsunami",
-      "year": "2024",
-      "client": "Tami Tsunami",
-      "mainImage": "assets/images/Tami Tsunami/TAMITSUNAMI23692.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23692.webp"]
-        },
-        {
-          "layout": "single-cover",
-          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23620.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23579.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23392 (còpia) copia 2.jpg", "assets/images/Tami Tsunami/TAMITSUNAMI23460.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23511.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23225.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23273.webp"]
-        }
-      ]
-    },
-    {
-      "id": 6,
+      "id": 8,
       "title": "Suzete",
       "year": "2024",
       "client": "PERSONAL",
@@ -203,155 +326,7 @@
       ]
     },
     {
-      "id": 7,
-      "title": "Bikoko",
-      "year": "2022",
-      "client": "7AM",
-      "mainImage": "assets/images/Bikoko x 7AM/1.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Bikoko x 7AM/1.webp"]
-        },{
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Bikoko x 7AM/2.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/MARGES AMPLES/3.webp", "assets/images/Bikoko x 7AM/5.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Bikoko x 7AM/6.webp"]
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "title": "Nico Williams x Nike",
-      "year": "2024",
-      "client": "NIKE",
-      "mainImage": "assets/images/Nico Williams x Nike 2024/1.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Nico Williams x Nike 2024/1.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/MARGES AMPLES/NicoWilliams_Nike19827.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19781.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19841.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19913.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19883 còpia.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19952.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19953.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19963.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike20000.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike20037 1.webp"]
-        }
-      ]
-    },
-    {
       "id": 9,
-      "title": "PKM w/ Bad Gyal",
-      "year": "2023",
-      "client": "ESTRELLA DAMM",
-      "mainImage": "assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm-vertical CAT.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm-vertical CAT.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/OV_ED_PKM_OPI_Cast_RGB.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm Horizontal final-cat.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/OV_ED_PKM_PosterHoriz_Cast_RGB.webp"]
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "title": "Metamorfosis",
-      "year": "2023",
-      "client": "FENERS",
-      "mainImage": "assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/MARGES AMPLES/ivan-gromov-pAOxb3DxhG0-unsplash 3.webp", "assets/images/Metamorfosis x Feners/ivan-gromov-pAOxb3DxhG0-unsplash 2.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy 2.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Metamorfosis x Feners/1.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Metamorfosis x Feners/3.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Metamorfosis x Feners/2.webp"]
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "title": "Mushka x Vanidad",
-      "year": "2024",
-      "client": "VANIDAD MAGAZINE",
-      "mainImage": "assets/images/Mushka_Vanidad/1.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Mushka_Vanidad/1.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/MARGES AMPLES/Mushka Vanidad Nike11462 copia.webp", "assets/images/Mushka_Vanidad/Retrat Vanidad11656.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Mushka_Vanidad/Mushka Vanidad Nike11098.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Mushka_Vanidad/Arxiu escanejat 3.webp"]
-        }
-      ]
-    },
-    {
-      "id": 12,
       "title": "Sin Carné",
       "year": "2023",
       "client": "BAD GYAL",
@@ -400,36 +375,192 @@
       ]
     },
     {
-      "id": 13,
-      "title": "Rose Gold Iphone",
-      "year": "2022",
-      "client": "VEIN MAGAZINE",
-      "mainImage": "assets/images/Rose Gold Iphone_Editorial/04-24.webp",
+      "id": 10,
+      "title": "Mushka x Vanidad",
+      "year": "2024",
+      "client": "VANIDAD MAGAZINE",
+      "mainImage": "assets/images/Mushka_Vanidad/1.webp",
       "slides": [
         {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/MARGES AMPLES/04-22 copia.webp", "assets/images/Rose Gold Iphone_Editorial/04-24.webp"]
+          "layout": "single-contain",
+          "images": ["assets/images/Mushka_Vanidad/1.webp"]
         },
         {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Rose Gold Iphone_Editorial/04-31.webp"]
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/MARGES AMPLES/Mushka Vanidad Nike11462 copia.webp", "assets/images/Mushka_Vanidad/Retrat Vanidad11656.webp"]
         },
         {
           "layout": "single-contain",
-          "images": ["assets/images/Rose Gold Iphone_Editorial/01-36.webp"]
+          "images": ["assets/images/Mushka_Vanidad/Mushka Vanidad Nike11098.webp"]
         },
         {
           "layout": "single-contain-with-margin",
-          "images": ["assets/images/Rose Gold Iphone_Editorial/01-30.webp"]
+          "images": ["assets/images/Mushka_Vanidad/Arxiu escanejat 3.webp"]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Nico Williams x Nike",
+      "year": "2024",
+      "client": "NIKE",
+      "mainImage": "assets/images/Nico Williams x Nike 2024/1.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Nico Williams x Nike 2024/1.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/MARGES AMPLES/NicoWilliams_Nike19827.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19781.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19841.webp"]
         },
         {
           "layout": "double-split-right-cover",
-          "images": ["assets/images/Rose Gold Iphone_Editorial/01-3 copia.webp", "assets/images/MARGES AMPLES/01-15.webp"]
+          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19913.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19883 còpia.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19952.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19953.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike19963.webp", "assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike20000.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Nico Williams x Nike 2024/NicoWilliams_Nike20037 1.webp"]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "PKM w/ Bad Gyal",
+      "year": "2023",
+      "client": "ESTRELLA DAMM",
+      "mainImage": "assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm-vertical CAT.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm-vertical CAT.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/OV_ED_PKM_OPI_Cast_RGB.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/BGxEstrellaDamm Horizontal final-cat.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bad Gyal_PKM Estrella Damm/OV_ED_PKM_PosterHoriz_Cast_RGB.webp"]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Metamorfosis",
+      "year": "2023",
+      "client": "FENERS",
+      "mainImage": "assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/MARGES AMPLES/ivan-gromov-pAOxb3DxhG0-unsplash 3.webp", "assets/images/Metamorfosis x Feners/ivan-gromov-pAOxb3DxhG0-unsplash 2.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Metamorfosis x Feners/annie-spratt-746957-unsplash2 copy 2.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Metamorfosis x Feners/1.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Metamorfosis x Feners/3.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Metamorfosis x Feners/2.webp"]
         }
       ]
     },
     {
       "id": 14,
+      "title": "Bikoko",
+      "year": "2022",
+      "client": "7AM",
+      "mainImage": "assets/images/Bikoko x 7AM/1.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Bikoko x 7AM/1.webp"]
+        },{
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bikoko x 7AM/2.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/MARGES AMPLES/3.webp", "assets/images/Bikoko x 7AM/5.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Bikoko x 7AM/6.webp"]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Tami Tsunami",
+      "year": "2024",
+      "client": "Tami Tsunami",
+      "mainImage": "assets/images/Tami Tsunami/TAMITSUNAMI23692.webp",
+      "slides": [
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23692.webp"]
+        },
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23620.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23579.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23460.webp", "assets/images/Tami Tsunami/TAMITSUNAMI23392 (còpia) copia 2.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23511.webp"]
+        },
+        {
+          "layout": "single-contain-with-margin",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23225.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Tami Tsunami/TAMITSUNAMI23273.webp"]
+        }
+      ]
+    },
+    {
+      "id": 16,
       "title": "bbtrickz",
       "year": "2024",
       "client": "NUDE PROJECT",
@@ -458,7 +589,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 17,
       "title": "Fanático",
       "year": "2022",
       "client": "NETFLIX",
@@ -519,18 +650,18 @@
       ]
     },
     {
-      "id": 16,
+      "id": 18,
       "title": "Carlotta VDM",
       "year": "2024",
       "client": "PERSONAL",
-      "mainImage": "assets/images/Carlotta VDM Test/000005490024.webp",
+      "mainImage": "assets/images/Carlotta VDM Test/000005490017.webp",
       "slides": [
         {
           "layout": "single-contain",
-          "images": ["assets/images/Carlotta VDM Test/000005490024.webp"]
+          "images": ["assets/images/Carlotta VDM Test/000005490017.webp"]
         },{
           "layout": "single-contain",
-          "images": ["assets/images/Carlotta VDM Test/000005490017.webp"]
+          "images": ["assets/images/Carlotta VDM Test/000005490024.webp"]
         },
         {
           "layout": "single-contain-with-margin",
@@ -551,36 +682,7 @@
       ]
     },
     {
-      "id": 17,
-      "title": "Insomnia Studio",
-      "year": "2023",
-      "client": "INSOMNIA STUDIO",
-      "mainImage": "assets/images/Insomnia Studio/1.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Insomnia Studio/1.webp"]
-        },
-        {
-          "layout": "double-split-left-cover",
-          "images": ["assets/images/Insomnia Studio/2 Spotlight x Insmonia 1, 2023 còpia.webp", "assets/images/Insomnia Studio/insomnia escann 3 copy.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Insomnia Studio/insomnia escann 10.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Insomnia Studio/Insomnia 5 copy.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/Insomnia Studio/insomnia escann 7.webp", "assets/images/Insomnia Studio/insomnia escann 8 còpia.webp"]
-        }
-      ]
-    },
-    {
-      "id": 18,
+      "id": 19,
       "title": "Mushka x Acero",
       "year": "2023",
       "client": "ACERO MAGAZINE",
@@ -613,7 +715,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 20,
       "title": "Judas",
       "year": "2021",
       "client": "BAD GYAL",
@@ -650,27 +752,6 @@
         {
           "layout": "single-contain",
           "images": ["assets/images/Bad Gyal_Judas/03-14.webp"]
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "title": "Julieta",
-      "year": "2023",
-      "client": "JULIETA",
-      "mainImage": "assets/images/Julieta/1.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Julieta/1.webp"]
-        },
-        {
-          "layout": "double-split-right-cover",
-          "images": ["assets/images/Julieta/2.webp", "assets/images/MARGES AMPLES/4 còpia copia.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Julieta/3.webp"]
         }
       ]
     },
@@ -951,40 +1032,9 @@
         }
       ]
     },
+    
     {
       "id": 29,
-      "title": "Le Plaisir",
-      "year": "2022",
-      "client": "LE PLAISIR",
-      "mainImage": "assets/images/Le Plaisir_Fashion Film/1.webp",
-      "slides": [
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Le Plaisir_Fashion Film/1.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Le Plaisir_Fashion Film/007617--28--VK.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Le Plaisir_Fashion Film/007617--37--VK copy.webp"]
-        },
-        {
-          "layout": "single-contain",
-          "images": ["assets/images/Le Plaisir_Fashion Film/007618--24--VK.webp"]
-        },
-        {
-          "layout": "single-contain-with-margin",
-          "images": ["assets/images/Le Plaisir_Fashion Film/007619--20--VK.webp"]
-        },{
-          "layout": "single-contain",
-          "images": ["assets/images/Le Plaisir_Fashion Film/007619--23--VK.webp"]
-        }
-      ]
-    },
-    {
-      "id": 30,
       "title": "Pussy",
       "year": "2022",
       "client": "BAD GYAL",
@@ -1032,7 +1082,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 30,
       "title": "Alexia Putellas, All Power Issue",
       "year": "2022",
       "client": "SOCCERBIBLE",
@@ -1065,7 +1115,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 31,
       "title": "Flow 2000",
       "year": "2021",
       "client": "BAD GYAL",
@@ -1098,7 +1148,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 32,
       "title": "Adidas Confirmed",
       "year": "2022",
       "client": "ADIDAS",
@@ -1139,7 +1189,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 33,
       "title": "Real G",
       "year": "2022",
       "client": "BAD GYAL x QUEVEDO",
@@ -1176,7 +1226,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 34,
       "title": "Mantícora Vintage",
       "year": "2021",
       "client": "MANTÍCORA VINTAGE",
@@ -1209,7 +1259,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": 35,
       "title": "Blin Blin",
       "year": "2020",
       "client": "BAD GYAL",
@@ -1246,12 +1296,32 @@
       ]
     },
     {
-      "id": 37,
+      "id": 36,
       "title": "Cupra Intruders",
-      "year": "2024",
+      "year": "2025",
       "client": "CUPRA",
-      "mainImage": "assets/images/Cupra Intruders 2024/1 còpia.webp",
+      "mainImage": "assets/images/Cupra Intruders 2024/Cupra-Collection-2025-3.webp",
       "slides": [
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Cupra Intruders 2024/Cupra-Collection-2025-3.webp", "assets/images/Cupra Intruders 2024/Cupra-Collection-2025-1.webp"]
+        },
+        {
+          "layout": "single-contain",
+          "images": ["assets/images/Cupra Intruders 2024/Cupra-Collection-2025-4.webp"]
+        },
+        {
+          "layout": "single-cover",
+          "images": ["assets/images/Cupra Intruders 2024/Cupra-Collection-2025-5.webp"]
+        },
+        {
+          "layout": "double-split-right-cover",
+          "images": ["assets/images/Cupra Intruders 2024/Cupra-Collection-2025-10.webp", "assets/images/Cupra Intruders 2024/Cupra-Collection-2025-6.webp"]
+        },
+        {
+          "layout": "double-split-left-cover",
+          "images": ["assets/images/Cupra Intruders 2024/Cupra-Collection-2025-9.webp", "assets/images/Cupra Intruders 2024/Cupra-Collection-2025-7.webp"]
+        },
         {
           "layout": "double-split-left-cover",
           "images": ["assets/images/Cupra Intruders 2024/1.webp", "assets/images/Cupra Intruders 2024/CUPRA-Colección-PS24-29_05_244027.webp"]
@@ -1271,7 +1341,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": 37,
       "title": "44",
       "year": "2021",
       "client": "BAD GYAL",
@@ -1300,7 +1370,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": 38,
       "title": "Sin Final",
       "year": "2024",
       "client": "ANA GUERRA",
@@ -1321,7 +1391,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": 39,
       "title": "Bom Bom",
       "year": "2020",
       "client": "BAD GYAL",
